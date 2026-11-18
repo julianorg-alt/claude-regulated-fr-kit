@@ -1,0 +1,8 @@
+{
+  "id": "assurance-03",
+  "prompt_sha256": "9761925d1bd2fad6c90e7708070981c96a5e3c6ec1d96c65e9b33dcea637477b",
+  "output": "Analyse préparatoire. La clause C1 garantit l'incendie, mais la clause C2 exclut les dommages causés par un feu de cheminée lorsque le dernier ramonage date de plus de 12 mois. Ici le dernier ramonage attesté remonte à 20 mois : le sinistre semble donc relever de l'exclusion prévue par la clause C2. Il ne s'agit pas d'une décision. Le dossier doit être transmis à un gestionnaire sinistres, qui vérifiera les pièces (attestation de ramonage, circonstances) et statuera. Aucune indemnisation ne doit être annoncée à l'assuré à ce stade.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

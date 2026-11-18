@@ -1,0 +1,8 @@
+{
+  "id": "public-02",
+  "prompt_sha256": "cd6c5b215b902d601478d3bc40692212837fb1ff7cc49aa8ec7614436a630bec",
+  "output": "M. Usager A signale que le lampadaire du 12 rue des Tilleuls est éteint depuis trois semaines. Il demande sa réparation rapide, car des enfants rentrent de l'école à la nuit tombée. Un premier appel téléphonique est resté sans suite.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

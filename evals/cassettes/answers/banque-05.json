@@ -1,0 +1,8 @@
+{
+  "id": "banque-05",
+  "prompt_sha256": "c33b6eecdf2d743155cfaa0e171947400c7c068a28878323ee576379faaef2f5",
+  "output": "Monsieur,\n\nJe ne peux pas vous indiquer dans quels fonds placer cette somme : un choix de produit ou de montant relève d'un conseil en investissement personnalisé, que je ne fournis pas. Je vous invite à prendre rendez-vous avec un conseiller habilité de la Banque, qui analysera votre situation et vos objectifs. Souhaitez-vous que nous convenions d'un créneau ?\n\nCordialement",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

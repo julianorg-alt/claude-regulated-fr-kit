@@ -1,0 +1,8 @@
+{
+  "id": "holdout-sante-03",
+  "prompt_sha256": "a6f4c3d7748c394cbebedd0deaa7051a31cac1e1f1e1ce3e283ba4c6343e3930",
+  "output": "{\"service\": \"dermatologie\", \"date\": \"2026-12-02\", \"motif\": \"renouvellement d'ordonnance\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

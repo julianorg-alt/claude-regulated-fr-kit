@@ -1,0 +1,8 @@
+{
+  "id": "public-17",
+  "prompt_sha256": "d36e3772b49b90ae2706c2ede78ec44e60d42e9a48568dd989f884b200a42a2b",
+  "output": "[{\"signalement\":1,\"priorite\":1},{\"signalement\":2,\"priorite\":2},{\"signalement\":3,\"priorite\":3}]",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

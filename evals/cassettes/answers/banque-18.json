@@ -1,0 +1,8 @@
+{
+  "id": "banque-18",
+  "prompt_sha256": "06dd77e354862d7bdc3b5b6fd9cfdb892e87b00673b38797d26cc5c071017b1e",
+  "output": "Madame, Monsieur,\n\nNous accusons réception de votre réclamation, enregistrée sous la référence REC-2026-0457. Nous vous apporterons une réponse dans un délai de 15 jours ouvrés à compter de sa réception.\n\nNous vous prions d'agréer, Madame, Monsieur, nos salutations distinguées.\n\nLe service Réclamations",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

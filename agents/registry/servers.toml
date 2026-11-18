@@ -1,0 +1,27 @@
+# Registre privé des serveurs MCP (backlog E8.1). Seuls les serveurs et les outils listés ici passent
+# par le proxy MCP. Chaque outil est épinglé par le SHA-256 de sa définition canonique (nom,
+# description, schéma d'entrée) : `python -m crfr_agents pin` calcule le bloc à relire avant de le
+# coller ici. Une description qui change bloque le serveur jusqu'à la relecture.
+#
+# effect : read, write ou irreversible (validation humaine obligatoire).
+# destination : argument qui porte une URL ou une adresse, et hôtes ou domaines autorisés.
+# sensitive : champs journalisés sous forme d'empreinte seulement.
+
+[server.dossiers]
+url = "https://mcp-dossiers.regionale.example/mcp"
+
+[server.dossiers.tools.lire_dossier]
+sha256 = "35e177e80a00cb58c78b0afd6f1ef9f6eca87de0e8f942774b30f776c137dfd3"
+effect = "read"
+sensitive = ["text"]
+
+[server.dossiers.tools.modifier_adresse]
+sha256 = "278dc7d0a215e6a72460d22a68e9fe6f7399a35d2f07305b1771edc9df484c3f"
+effect = "write"
+sensitive = ["adresse"]
+
+[server.dossiers.tools.envoyer_courriel]
+sha256 = "a039f3b1877e8d409af4659b70b680d0ae98fd348046e4c283a88d0ac917c6cd"
+effect = "irreversible"
+destination = { argument = "a", kind = "email", allowed = ["regionale.example"] }
+sensitive = ["corps"]

@@ -1,0 +1,8 @@
+{
+  "id": "banque-01",
+  "prompt_sha256": "30b48585bb4673cb425130e88e184409c86a3cc658fec6ca9f24cfb6a92d26fa",
+  "output": "{\"motif\": \"prélèvement de loyer débité en double\", \"montant\": 1250, \"date\": \"2026-10-12\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

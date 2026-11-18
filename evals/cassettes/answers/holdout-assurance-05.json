@@ -1,0 +1,8 @@
+{
+  "id": "holdout-assurance-05",
+  "prompt_sha256": "292e2b60c27d332877e60b60d5e191cc8b492ff75d747a3e5f9e8435b3639953",
+  "output": "{\"priorite\": \"urgent\", \"action\": \"Transmettre dans l'heure à la cellule assistance, par téléphone.\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

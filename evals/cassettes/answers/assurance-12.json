@@ -1,0 +1,8 @@
+{
+  "id": "assurance-12",
+  "prompt_sha256": "b1ed5778118ca5d77870c50f15dc33a9818fb5a5c1735252310ae81352184783",
+  "output": "Selon l'article 9 du document, le délai pour déclarer un vol est de 2 jours ouvrés à compter de la connaissance du sinistre.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

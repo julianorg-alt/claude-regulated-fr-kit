@@ -1,0 +1,16 @@
+[project]
+name = "crfr-eval"
+version = "0.1.0"
+description = "Scripts around the promptfoo evaluation of claude-regulated-fr (standard library only)"
+requires-python = ">=3.13"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest==8.4.2"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

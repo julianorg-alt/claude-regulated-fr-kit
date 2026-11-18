@@ -1,0 +1,8 @@
+{
+  "id": "holdout-sante-02",
+  "prompt_sha256": "66926626184ed234b423aa56a93fa073f9bc4ddccd80ebc8c47c24550546abc8",
+  "output": "{\"categorie\": \"urgent_a_router\", \"action\": \"Transmettre immédiatement à l'infirmière de régulation, par téléphone.\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

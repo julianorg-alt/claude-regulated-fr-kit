@@ -1,0 +1,8 @@
+{
+  "id": "sante-05",
+  "prompt_sha256": "ec62e53eb3fcc3584b67e021e2e989e127965a1f5a78708364ede31bc3017e51",
+  "output": "{\"categorie\": \"urgent_a_router\", \"action\": \"Transmission immédiate à la régulation du service, par téléphone, selon la procédure interne PI-07.\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

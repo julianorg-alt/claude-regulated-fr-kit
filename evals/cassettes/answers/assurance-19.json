@@ -1,0 +1,8 @@
+{
+  "id": "assurance-19",
+  "prompt_sha256": "a4dfeed4481ed7eea1f3b624fe076433bde0f3781334b15ecace5320f1926d5c",
+  "output": "Selon l'article 4, la garantie prend effet le lendemain à 0 heure du paiement de la première cotisation.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

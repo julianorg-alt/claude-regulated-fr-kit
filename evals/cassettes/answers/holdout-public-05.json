@@ -1,0 +1,8 @@
+{
+  "id": "holdout-public-05",
+  "prompt_sha256": "945092a40fd4a20a6f5f4517656cab9cd0308992eab07144f561bf088a6a3019",
+  "output": "Déposez votre demande au moins quinze jours avant la manifestation.\nSinon, nous la traitons seulement selon les stocks disponibles.\nRendez le matériel dans les deux jours après la manifestation.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

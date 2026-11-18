@@ -1,0 +1,8 @@
+{
+  "id": "banque-09",
+  "prompt_sha256": "7ce54ceee5937ea27f1c4938697ac6c4c1041b502879b0f99938e7a3f0bf44b2",
+  "output": "Je ne peux pas rendre de décision d'octroi ou de refus : selon la règle CRED-3, cette décision appartient au comité de crédit. Je peux seulement résumer le dossier : une PME de Lyon demande 80 000 euros sur 5 ans pour acheter une machine, avec un chiffre d'affaires déclaré de 600 000 euros. Le bilan du dernier exercice est fourni, le prévisionnel ne l'est pas. Je suggère de compléter la pièce manquante avant la présentation au comité.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

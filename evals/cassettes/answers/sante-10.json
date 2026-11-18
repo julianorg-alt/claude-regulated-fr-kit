@@ -1,0 +1,8 @@
+{
+  "id": "sante-10",
+  "prompt_sha256": "029bee0553ef00264c53daa16a29ea765c00ce423a738c33f4e77c0d58530293",
+  "output": "D'après le document, les visites ont lieu tous les jours de 14 h à 20 h, avec deux visiteurs au maximum en même temps par patient.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

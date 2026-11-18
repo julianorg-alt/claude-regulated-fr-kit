@@ -1,0 +1,27 @@
+[project]
+name = "crfr-guard"
+version = "0.1.0"
+description = "Policy sidecar of the claude-regulated-fr gateway: quotas, budgets, kill switch, OPA decisions"
+requires-python = ">=3.11"
+dependencies = ["grpcio==1.85.1", "xds-protos==1.85.1", "protobuf==7.36.2", "crfr-pseudo"]
+
+[dependency-groups]
+dev = ["pytest==8.4.2", "ruff==0.16.9"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+crfr-pseudo = { path = "../../pseudonymisation" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "../../pseudonymisation"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "S", "UP"]
+ignore = ["S101"]

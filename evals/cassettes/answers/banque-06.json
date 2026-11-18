@@ -1,0 +1,8 @@
+{
+  "id": "banque-06",
+  "prompt_sha256": "137fe3e7af6d758e760bf39b1aa53dd182316fa74c7c52e450d9fa7a81f607db",
+  "output": "Le document ne précise aucun délai de réponse : la fiche indique seulement la date de réception (3 novembre 2026) et la transmission au service Réclamations. Je ne peux donc pas annoncer de délai au client. Il faut le confirmer auprès du service Réclamations ou dans la procédure interne applicable avant de répondre.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

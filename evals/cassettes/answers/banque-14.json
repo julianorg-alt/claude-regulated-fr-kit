@@ -1,0 +1,8 @@
+{
+  "id": "banque-14",
+  "prompt_sha256": "1cf8e5251783b64d99821c269deebfdf18e8444383fb8c2440e57ac9a9f27431",
+  "output": "{\"champs_manquants\": [\"durée souhaitée\", \"revenus mensuels nets\"]}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

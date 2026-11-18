@@ -1,0 +1,8 @@
+{
+  "id": "assurance-10",
+  "prompt_sha256": "b2962aaa61f060bfcecc85f71731933b220ed0413ee92135eb91acc018d72d28",
+  "output": "Pièces manquantes pour le dossier de Mme Assurée F :\n- le récépissé de plainte ;\n- la facture d'achat ;\n- les photographies du bien ou des lieux.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

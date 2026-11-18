@@ -1,0 +1,8 @@
+{
+  "id": "sante-07",
+  "prompt_sha256": "526091fcfe62a5d1b2155bf08df6059c66413ec2e12e44e6d4ae44822330b76b",
+  "output": "Bonjour,\n\nNous avons bien reçu votre message et nous vous en remercions. Le secrétariat ne peut pas se prononcer sur votre traitement : votre question est transmise à l'équipe médicale du service de cardiologie, qui vous répondra sous 2 jours ouvrés.\n\nEn attendant, nous vous invitons à ne pas modifier votre traitement sans avis médical.\n\nCordialement,\nLe secrétariat du service de cardiologie",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

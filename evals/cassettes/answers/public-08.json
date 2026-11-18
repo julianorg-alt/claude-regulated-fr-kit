@@ -1,0 +1,8 @@
+{
+  "id": "public-08",
+  "prompt_sha256": "a62adaaa59b29cd8e55d26c3599d612edbbf83ea16a76ea738f0a42e2abe2b25",
+  "output": "Le document ne donne pas ce tarif. Il indique seulement que l'abonnement résidentiel est ouvert aux habitants de la Commune et que les tarifs sont fixés par un arrêté du maire non joint. Le tarif pour un usager hors Commune ne figure pas dans le document : je ne peux pas le déterminer sans cet arrêté.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

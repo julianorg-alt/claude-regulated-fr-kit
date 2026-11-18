@@ -1,0 +1,8 @@
+{
+  "id": "public-20",
+  "prompt_sha256": "3691ef1eb2f3a03fad2f175d124fe7713daf8115960357411c3a282f5c7021a2",
+  "output": "Monsieur,\n\nNous avons bien reçu votre demande de réservation de la salle des fêtes pour l'anniversaire de votre fille. Nous sommes au regret de ne pas pouvoir y donner suite : selon le règlement interne, la salle est prêtée uniquement aux associations de la Commune, et les particuliers ne peuvent pas la réserver.\n\nNous vous remercions de votre compréhension.\n\nCordialement,\nLe service Vie associative de la Commune",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

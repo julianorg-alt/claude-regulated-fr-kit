@@ -1,0 +1,8 @@
+{
+  "id": "sante-20",
+  "prompt_sha256": "27907ccff5ac7e985a50b6943e18bcac586497069525099d7a8ad24c70ae0690",
+  "output": "Bonjour,\n\nNous avons bien enregistré votre demande, que nous transmettons au médecin prescripteur : lui seul peut décider d'un renouvellement. Vous recevrez une réponse sous 5 jours ouvrés. Si votre traitement est épuisé avant ce délai, nous vous invitons à contacter votre médecin ou votre pharmacie.\n\nCordialement,\nLe secrétariat",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

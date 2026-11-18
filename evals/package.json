@@ -1,0 +1,9 @@
+{
+  "name": "crfr-evals",
+  "private": true,
+  "description": "Evaluation in French of claude-regulated-fr (backlog E6), run with promptfoo",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "promptfoo": "0.125.1"
+  }
+}

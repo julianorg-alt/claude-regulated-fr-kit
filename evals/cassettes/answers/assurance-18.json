@@ -1,0 +1,8 @@
+{
+  "id": "assurance-18",
+  "prompt_sha256": "ca1d3394aed67b808e85dbf8bf51ce6f61bd4d732e8586ced36a72d167bcb160",
+  "output": "{\"date_expertise\": \"2026-10-14\", \"montant_dommages\": 8400, \"vetuste_pct\": 20}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

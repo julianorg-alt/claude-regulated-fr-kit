@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "25"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(make:*)",
+      "Bash(git:*)",
+      "Bash(gh api:*)",
+      "Bash(docker compose:*)",
+      "Bash(uv:*)",
+      "Bash(terraform:*)",
+      "Bash(conftest:*)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(gh repo edit:*)"
+    ]
+  }
+}

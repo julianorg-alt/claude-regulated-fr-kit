@@ -1,0 +1,8 @@
+{
+  "id": "banque-13",
+  "prompt_sha256": "4a04c0e279841d9521da7cbca20b50ae7bde2ba9a4fc7bd2b96471f5c85eecd3",
+  "output": "Le dossier est non conforme à la règle OUV-2. La pièce d'identité et le contrat signé sont présents, mais le justificatif de domicile (une facture datée d'il y a 5 mois) dépasse la limite de 3 mois. Il faut demander au client un justificatif plus récent.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

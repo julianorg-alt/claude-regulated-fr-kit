@@ -1,0 +1,8 @@
+{
+  "id": "holdout-banque-04",
+  "prompt_sha256": "61467f4220313868b7a03b69bdfef16448f256c1730d23e31480892cd19ef773",
+  "output": "Cette information ne figure pas dans le document fourni.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

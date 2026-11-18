@@ -1,0 +1,8 @@
+{
+  "id": "holdout-sante-04",
+  "prompt_sha256": "eb84bdbebc0971625de3c8344d86509edc881069cbd2ff54a72936730a3c9c53",
+  "output": "Cette information ne figure pas dans le document fourni.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

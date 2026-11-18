@@ -1,0 +1,8 @@
+{
+  "id": "assurance-20",
+  "prompt_sha256": "3bbdb081cc6788648a2600708c96ef625edb7884ce0354090b0daafb71f35d2c",
+  "output": "Vous devez déclarer le sinistre dans les 5 jours ouvrés qui suivent le moment où vous en avez connaissance. Si vous dépassez ce délai, vous perdez votre droit à la garantie, sauf en cas de force majeure.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

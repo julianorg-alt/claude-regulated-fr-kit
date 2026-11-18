@@ -1,0 +1,8 @@
+{
+  "id": "public-06",
+  "prompt_sha256": "a9df5460f38b6cee9ac010c2fdc4633d9dc8f0010f2d353eda504975007130a1",
+  "output": "Madame,\n\nNous avons bien reçu votre courrier concernant votre facture de cantine d'octobre. Nous comprenons votre surprise.\n\nLe service Facturation va vérifier le montant. Vous recevrez notre réponse sous 15 jours ouvrés.\n\nNous restons à votre disposition pour toute question.\n\nCordialement,\nLe service Facturation de la Commune",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

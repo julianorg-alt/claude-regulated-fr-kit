@@ -1,0 +1,8 @@
+{
+  "id": "sante-09",
+  "prompt_sha256": "3d390348df45ff5e5a942c5e5e850a7614186b0078ffebe7f29c625034309844",
+  "output": "{\"pieces_manquantes\": [\"attestation de mutuelle\", \"courrier du médecin traitant\"]}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

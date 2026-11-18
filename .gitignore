@@ -1,0 +1,23 @@
+.tools/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.terraform/
+*.tfstate
+*.tfstate.*
+plan.bin
+plan.json
+crash.log
+.env
+.env.*
+!.env.example
+out/
+
+# Evaluation (E6)
+evals/node_modules/
+evals/.promptfoo/
+evals/results/run-*
+agents/scheduled/out/
+evals/results/redteam-*

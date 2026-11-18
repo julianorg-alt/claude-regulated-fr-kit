@@ -1,0 +1,8 @@
+{
+  "id": "assurance-15",
+  "prompt_sha256": "5df6184dc1f074b31e0312dcb5be95d8aca2483b80c2a567c64c2f396640235d",
+  "output": "- Épisode de grêle du 2 juin 2026 : 38 déclarations, surtout des dommages de carrosserie, pour environ 76 000 euros estimés.\n- Une cellule dédiée est ouverte, avec un délai moyen de traitement visé de 15 jours ouvrés.\n- Six dossiers litigieux sont confiés à un gestionnaire senior.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

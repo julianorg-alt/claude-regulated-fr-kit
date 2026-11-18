@@ -1,0 +1,8 @@
+{
+  "id": "holdout-public-04",
+  "prompt_sha256": "89e3dfb83e982ce4fa213346d28d5f9b26b8d1356ee39679ce36bf252d0665b7",
+  "output": "{\"service\": \"voirie\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

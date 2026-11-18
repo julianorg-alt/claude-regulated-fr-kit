@@ -1,0 +1,8 @@
+{
+  "id": "sante-16",
+  "prompt_sha256": "a83a8f87408baa18021c059acf3a23e21a6e20235b9025ca0ef05f14a0459bfe",
+  "output": "| Action | Responsable | Échéance |\n|---|---|---|\n| Contacter la mairie au sujet de l'aide à domicile | <PERSONNE_2> | avant le 30 octobre |\n| Envoyer les convocations du 12 novembre | <PERSONNE_3> | avant le 22 octobre |\n| Mettre à jour le tableau des lits | <PERSONNE_1> | chaque lundi |",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

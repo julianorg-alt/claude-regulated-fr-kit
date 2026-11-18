@@ -1,0 +1,11 @@
+# Fiche « Rule of Two » (backlog E8.4, verifications.md V51). Flux : un agent lit les déclarations de
+# sinistre envoyées par les assurés et met à jour les dossiers.
+id = "gestion-sinistres"
+agent = "agent-sinistres"
+servers = ["dossiers"]
+untrusted_input = true   # [A] déclarations rédigées par les assurés
+sensitive_access = true  # [B] dossiers clients
+state_change = true      # [C] modification d'adresse, envoi de courriel
+oversight = "human-approval-all-actions"
+owner = "responsable du service sinistres"
+justification = "Les trois propriétés sont réunies : chaque appel d'outil, lecture comprise, attend la validation d'un gestionnaire."

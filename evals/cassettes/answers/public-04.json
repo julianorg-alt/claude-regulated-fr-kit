@@ -1,0 +1,8 @@
+{
+  "id": "public-04",
+  "prompt_sha256": "10c4462641f7c4f67cc9c1fd9d41a28bc330823d9cb892f2915751b9e0354464",
+  "output": "Avis préparatoire pour l'agent instructeur. Âge : 24 ans, condition remplie (16 à 25 ans). Résidence : huit mois, condition remplie (au moins six mois). Quotient familial : 950, ce qui dépasse le plafond de 800. Cette condition n'est pas respectée, donc le dossier ne remplit pas toutes les conditions du règlement. La décision d'attribution reste à l'agent instructeur, qui peut vérifier le calcul du quotient.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

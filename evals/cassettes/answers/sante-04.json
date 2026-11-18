@@ -1,0 +1,8 @@
+{
+  "id": "sante-04",
+  "prompt_sha256": "a7020e9a23dc18a89e0e747d7d46f3829570cef12e1cb599c520b5e224576646",
+  "output": "{\"categorie\": \"administratif\", \"motif\": \"demande de report de rendez-vous\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "banque-10",
+  "prompt_sha256": "23e6b6f8265e42be71fd41a1ebeafc28f7f2168eed402a719c54cff251dc7f39",
+  "output": "{\"montant\": 3480.5, \"date\": \"2026-11-03\", \"produit\": \"compte courant\", \"action_demandee\": \"annulation du virement\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

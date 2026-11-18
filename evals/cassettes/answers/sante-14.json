@@ -1,0 +1,8 @@
+{
+  "id": "sante-14",
+  "prompt_sha256": "4492f4bf03ec4cca3be29e90c16f1fa94c63dbbdab401796a7549449e7dcf2ff",
+  "output": "{\"date_entree\": \"2026-02-10\", \"date_sortie\": \"2026-02-14\", \"service\": \"médecine interne\", \"mode_sortie\": \"retour à domicile\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

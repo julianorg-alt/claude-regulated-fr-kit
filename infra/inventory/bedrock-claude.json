@@ -1,0 +1,4444 @@
+{
+  "models": [
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "ap-northeast-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          },
+          "ap-northeast-2": {
+            "geo": true,
+            "global": false,
+            "in_region": true
+          },
+          "ap-south-1": {
+            "geo": true,
+            "global": false,
+            "in_region": true
+          },
+          "ap-southeast-1": {
+            "geo": true,
+            "global": false,
+            "in_region": true
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          },
+          "ca-central-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-central-1": {
+            "geo": false,
+            "geo_eol": "2026-09-10",
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          },
+          "eu-central-2": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-west-1": {
+            "geo": false,
+            "geo_eol": "2026-09-10",
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          },
+          "eu-west-2": {
+            "geo": false,
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          },
+          "eu-west-3": {
+            "geo": false,
+            "geo_eol": "2026-09-10",
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-east-1": {
+            "geo": false,
+            "geo_eol": "2026-09-10",
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          },
+          "us-east-2": {
+            "geo": false,
+            "geo_eol": "2026-09-10",
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": false,
+            "geo_eol": "2026-09-10",
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          },
+          "us-west-2": {
+            "geo": false,
+            "geo_eol": "2026-09-10",
+            "global": false,
+            "in_region": false,
+            "in_region_eol": "2026-09-10"
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-3-haiku",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-3-haiku-20240307-v1:0",
+      "name": "Claude 3 Haiku"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "us-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-fable-5",
+      "eu_destinations": {},
+      "eu_profile": null,
+      "name": "Claude Fable 5"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-fable-5-1",
+      "eu_destinations": {},
+      "eu_profile": null,
+      "name": "Claude Fable 5.1"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-fable-5-2",
+      "eu_destinations": {},
+      "eu_profile": null,
+      "name": "Claude Fable 5.2"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "ap-northeast-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-east-2": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-west-2": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "name": "Claude Haiku 4.5"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-haiku-5-5",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-haiku-5-5",
+      "name": "Claude Haiku 5.5"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "us-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-mythos-5",
+      "eu_destinations": {},
+      "eu_profile": null,
+      "name": "Claude Mythos 5"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-mythos-5-1",
+      "eu_destinations": {},
+      "eu_profile": null,
+      "name": "Claude Mythos 5.1"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-mythos-5-2",
+      "eu_destinations": {},
+      "eu_profile": null,
+      "name": "Claude Mythos 5.2"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "us-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-opus-4-1",
+      "eu_destinations": {},
+      "eu_profile": null,
+      "name": "Claude Opus 4.1"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-opus-4-5",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
+      "name": "Claude Opus 4.5"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": true
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-opus-4-6",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-opus-4-6-v1",
+      "name": "Claude Opus 4.6"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "ap-northeast-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-opus-4-7",
+      "name": "Claude Opus 4.7"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "ap-northeast-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "ap-southeast-4": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-opus-4-8",
+      "name": "Claude Opus 4.8"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "ap-southeast-4": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": true
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-opus-5",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-opus-5",
+      "name": "Claude Opus 5"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "ap-southeast-4": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": true
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-opus-5-5",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-opus-5-5",
+      "name": "Claude Opus 5.5"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "ap-east-2": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-sonnet-4",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "il-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3",
+          "il-central-1"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+      "name": "Claude Sonnet 4"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-sonnet-4-5",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "name": "Claude Sonnet 4.5"
+    },
+    {
+      "availability": {
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": true
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-sonnet-4-6",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "ap-southeast-4": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-north-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "eu-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-east-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          },
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": true
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": true
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": true
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-sonnet-5",
+      "name": "Claude Sonnet 5"
+    },
+    {
+      "availability": {
+        "bedrock-mantle": {
+          "us-gov-west-1": {
+            "geo": false,
+            "global": false,
+            "in_region": true
+          }
+        },
+        "bedrock-runtime": {
+          "af-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-east-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-northeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-south-2": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-3": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-4": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-5": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-6": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ap-southeast-7": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "ca-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "ca-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-central-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-north-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-south-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "eu-west-3": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "il-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "me-south-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "mx-central-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "sa-east-1": {
+            "geo": false,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-east-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-gov-east-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-gov-west-1": {
+            "geo": true,
+            "global": false,
+            "in_region": false
+          },
+          "us-west-1": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          },
+          "us-west-2": {
+            "geo": true,
+            "global": true,
+            "in_region": false
+          }
+        }
+      },
+      "card": "model-card-anthropic-claude-sonnet-5-5",
+      "eu_destinations": {
+        "eu-central-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-central-2": [
+          "eu-central-1",
+          "eu-central-2",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-north-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-south-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-1": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ],
+        "eu-west-2": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-2",
+          "eu-west-3"
+        ],
+        "eu-west-3": [
+          "eu-central-1",
+          "eu-north-1",
+          "eu-south-1",
+          "eu-south-2",
+          "eu-west-1",
+          "eu-west-3"
+        ]
+      },
+      "eu_profile": "eu.anthropic.claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5"
+    }
+  ],
+  "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.md"
+}

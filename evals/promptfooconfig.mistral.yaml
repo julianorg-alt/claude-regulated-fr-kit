@@ -1,0 +1,30 @@
+# Evaluation in French over four sectors (backlog E6). CI replays recorded answers and verdicts
+# (providers/cassette.py, providers/judge.py); `make eval-live` calls a real model instead.
+description: crfr evaluation, French, four sectors
+prompts:
+  - id: file://prompts/assistant.json
+    label: assistant
+providers:
+  # Live run of the exit-route provider (docs/evals/exit-provider-2026-11-18.md). Provider settings only:
+  # Mistral Large 4 always reasons (reasoning_effort none is refused by the API) and promptfoo's default
+  # max_tokens of 1024 is spent on the reasoning, so the answer is raised and the final text block is kept.
+  - id: mistral:mistral-large-4-0
+    label: mistral-large-4-0
+    config:
+      max_tokens: 16384
+    transform: |
+      return typeof output === 'string' ? output : output.filter((b) => b.type === 'text').map((b) => b.text).join('')
+defaultTest:
+  options:
+    provider: file://providers/judge.py
+    # The judge sees the task and its source document, so INCONNU only means a real doubt.
+    rubricPrompt: file://prompts/judge.json
+tests:
+  - file://tasks/banque.yaml
+  - file://tasks/assurance.yaml
+  - file://tasks/sante.yaml
+  - file://tasks/public.yaml
+  - file://tasks/holdout/banque.yaml
+  - file://tasks/holdout/assurance.yaml
+  - file://tasks/holdout/sante.yaml
+  - file://tasks/holdout/public.yaml

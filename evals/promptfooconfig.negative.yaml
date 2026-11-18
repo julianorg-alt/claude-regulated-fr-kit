@@ -1,0 +1,20 @@
+# Negative control: every task must fail on a content-free answer (see providers/negative.py).
+description: crfr evaluation, negative control
+prompts:
+  - id: file://prompts/assistant.json
+    label: assistant
+providers:
+  - id: file://providers/negative.py
+    label: negative-control
+defaultTest:
+  options:
+    provider: file://providers/negative_judge.py
+tests:
+  - file://tasks/banque.yaml
+  - file://tasks/assurance.yaml
+  - file://tasks/sante.yaml
+  - file://tasks/public.yaml
+  - file://tasks/holdout/banque.yaml
+  - file://tasks/holdout/assurance.yaml
+  - file://tasks/holdout/sante.yaml
+  - file://tasks/holdout/public.yaml

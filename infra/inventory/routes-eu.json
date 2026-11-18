@@ -1,0 +1,1275 @@
+{
+  "residency": "eu",
+  "routes": [
+    {
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 4.5",
+      "profile": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 4.5",
+      "profile": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "destinations": [
+        "eu-north-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Haiku 4.5",
+      "profile": null,
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 4.5",
+      "profile": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 4.5",
+      "profile": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 4.5",
+      "profile": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "destinations": [
+        "eu-west-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Haiku 4.5",
+      "profile": null,
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 4.5",
+      "profile": "eu.anthropic.claude-haiku-4-5-20251001-v1:0",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 5.5",
+      "profile": "eu.anthropic.claude-haiku-5-5",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 5.5",
+      "profile": "eu.anthropic.claude-haiku-5-5",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 5.5",
+      "profile": "eu.anthropic.claude-haiku-5-5",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 5.5",
+      "profile": "eu.anthropic.claude-haiku-5-5",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 5.5",
+      "profile": "eu.anthropic.claude-haiku-5-5",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-haiku-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Haiku 5.5",
+      "profile": "eu.anthropic.claude-haiku-5-5",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.5",
+      "profile": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.5",
+      "profile": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.5",
+      "profile": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.5",
+      "profile": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.5",
+      "profile": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.5",
+      "profile": "eu.anthropic.claude-opus-4-5-20251101-v1:0",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.6",
+      "profile": "eu.anthropic.claude-opus-4-6-v1",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.6",
+      "profile": "eu.anthropic.claude-opus-4-6-v1",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.6",
+      "profile": "eu.anthropic.claude-opus-4-6-v1",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.6",
+      "profile": "eu.anthropic.claude-opus-4-6-v1",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.6",
+      "profile": "eu.anthropic.claude-opus-4-6-v1",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.6",
+      "profile": "eu.anthropic.claude-opus-4-6-v1",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.7",
+      "profile": "eu.anthropic.claude-opus-4-7",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.7",
+      "profile": "eu.anthropic.claude-opus-4-7",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "destinations": [
+        "eu-north-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Opus 4.7",
+      "profile": null,
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.7",
+      "profile": "eu.anthropic.claude-opus-4-7",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.7",
+      "profile": "eu.anthropic.claude-opus-4-7",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.7",
+      "profile": "eu.anthropic.claude-opus-4-7",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "destinations": [
+        "eu-west-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Opus 4.7",
+      "profile": null,
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-7",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.7",
+      "profile": "eu.anthropic.claude-opus-4-7",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.8",
+      "profile": "eu.anthropic.claude-opus-4-8",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.8",
+      "profile": "eu.anthropic.claude-opus-4-8",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "destinations": [
+        "eu-north-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Opus 4.8",
+      "profile": null,
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.8",
+      "profile": "eu.anthropic.claude-opus-4-8",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.8",
+      "profile": "eu.anthropic.claude-opus-4-8",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.8",
+      "profile": "eu.anthropic.claude-opus-4-8",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "destinations": [
+        "eu-west-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Opus 4.8",
+      "profile": null,
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-4-8",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 4.8",
+      "profile": "eu.anthropic.claude-opus-4-8",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5",
+      "profile": "eu.anthropic.claude-opus-5",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5",
+      "profile": "eu.anthropic.claude-opus-5",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5",
+      "destinations": [
+        "eu-north-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Opus 5",
+      "profile": null,
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5",
+      "profile": "eu.anthropic.claude-opus-5",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5",
+      "profile": "eu.anthropic.claude-opus-5",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5",
+      "profile": "eu.anthropic.claude-opus-5",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5",
+      "destinations": [
+        "eu-west-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Opus 5",
+      "profile": null,
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5",
+      "profile": "eu.anthropic.claude-opus-5",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5.5",
+      "profile": "eu.anthropic.claude-opus-5-5",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5.5",
+      "profile": "eu.anthropic.claude-opus-5-5",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5.5",
+      "profile": "eu.anthropic.claude-opus-5-5",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5.5",
+      "profile": "eu.anthropic.claude-opus-5-5",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5.5",
+      "profile": "eu.anthropic.claude-opus-5-5",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-opus-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Opus 5.5",
+      "profile": "eu.anthropic.claude-opus-5-5",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4",
+      "profile": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4",
+      "profile": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4",
+      "profile": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4",
+      "profile": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4",
+      "profile": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4",
+      "profile": "eu.anthropic.claude-sonnet-4-20250514-v1:0",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.5",
+      "profile": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.5",
+      "profile": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.5",
+      "profile": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.5",
+      "profile": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.5",
+      "profile": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.5",
+      "profile": "eu.anthropic.claude-sonnet-4-5-20250929-v1:0",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.6",
+      "profile": "eu.anthropic.claude-sonnet-4-6",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.6",
+      "profile": "eu.anthropic.claude-sonnet-4-6",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.6",
+      "profile": "eu.anthropic.claude-sonnet-4-6",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.6",
+      "profile": "eu.anthropic.claude-sonnet-4-6",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.6",
+      "profile": "eu.anthropic.claude-sonnet-4-6",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-4-6",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 4.6",
+      "profile": "eu.anthropic.claude-sonnet-4-6",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5",
+      "profile": "eu.anthropic.claude-sonnet-5",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5",
+      "profile": "eu.anthropic.claude-sonnet-5",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "destinations": [
+        "eu-north-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Sonnet 5",
+      "profile": null,
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5",
+      "profile": "eu.anthropic.claude-sonnet-5",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5",
+      "profile": "eu.anthropic.claude-sonnet-5",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5",
+      "profile": "eu.anthropic.claude-sonnet-5",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "destinations": [
+        "eu-west-1"
+      ],
+      "mode": "in_region_mantle",
+      "model": "Claude Sonnet 5",
+      "profile": null,
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5",
+      "profile": "eu.anthropic.claude-sonnet-5",
+      "source_region": "eu-west-3"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5.5",
+      "profile": "eu.anthropic.claude-sonnet-5-5",
+      "source_region": "eu-central-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5.5",
+      "profile": "eu.anthropic.claude-sonnet-5-5",
+      "source_region": "eu-north-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5.5",
+      "profile": "eu.anthropic.claude-sonnet-5-5",
+      "source_region": "eu-south-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5.5",
+      "profile": "eu.anthropic.claude-sonnet-5-5",
+      "source_region": "eu-south-2"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5.5",
+      "profile": "eu.anthropic.claude-sonnet-5-5",
+      "source_region": "eu-west-1"
+    },
+    {
+      "card": "model-card-anthropic-claude-sonnet-5-5",
+      "destinations": [
+        "eu-central-1",
+        "eu-north-1",
+        "eu-south-1",
+        "eu-south-2",
+        "eu-west-1",
+        "eu-west-3"
+      ],
+      "mode": "geo",
+      "model": "Claude Sonnet 5.5",
+      "profile": "eu.anthropic.claude-sonnet-5-5",
+      "source_region": "eu-west-3"
+    }
+  ]
+}

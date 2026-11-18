@@ -1,0 +1,8 @@
+{
+  "id": "holdout-assurance-04",
+  "prompt_sha256": "315051bae6dacc98ef913352326a7fc8e6f2023efa4117d4c128d7843ef66b33",
+  "output": "Monsieur,\n\nNous vous confirmons que l'expertise de votre sinistre aura lieu le 24 novembre 2026 à 14 h, à votre domicile. L'expert sera Mme Experte L. Merci de lui présenter les photographies et le devis de réparation. En cas d'empêchement, merci de prévenir notre service au moins 48 heures avant.\n\nCordialement,\nLe service Sinistres",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

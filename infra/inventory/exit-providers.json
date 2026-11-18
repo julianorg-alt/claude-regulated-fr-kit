@@ -1,0 +1,23 @@
+{
+  "_comment": "Providers the exit route may send traffic to (backlog E10.1). Adding one is a decision: update the DORA register, the transfer analysis and the DPA grid first. Model identifiers are chosen by the deployer (--exit-model), not listed here.",
+  "providers": [
+    {
+      "id": "mistral",
+      "host": "api.mistral.ai",
+      "port": 443,
+      "tls": true,
+      "api": "OpenAI-compatible chat completions at /v1/chat/completions, Bearer key",
+      "hosting_verified": false,
+      "verification": "V66"
+    },
+    {
+      "id": "opengatellm",
+      "host": null,
+      "port": 443,
+      "tls": true,
+      "api": "OpenAI-compatible, self-hosted by the institution; the host is the deployer's own (--exit-host)",
+      "hosting_verified": false,
+      "verification": "V66"
+    }
+  ]
+}

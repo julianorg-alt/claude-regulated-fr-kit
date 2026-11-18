@@ -1,0 +1,8 @@
+{
+  "id": "holdout-public-03",
+  "prompt_sha256": "2b5fee2957a9354c8b04afc6d2b7254961b74013f9ae6867f269024a4ae1c529",
+  "output": "Cette information ne figure pas dans le document fourni.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

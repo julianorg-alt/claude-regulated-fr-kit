@@ -1,0 +1,8 @@
+{
+  "id": "holdout-sante-05",
+  "prompt_sha256": "715bc17ef0bb660f421631036876e58ea9a3ba0e03fca1a420a7ba5716a0d7eb",
+  "output": "Bonjour Monsieur,\n\nNous sommes désolés : votre consultation du 26 novembre est reportée. Le prochain créneau libre avec le Dr Médecin R. est le jeudi 3 décembre 2026 à 10 h. Pour toute question, vous pouvez nous rappeler au 01 00 00 00 00.\n\nCordialement,\nLe secrétariat",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

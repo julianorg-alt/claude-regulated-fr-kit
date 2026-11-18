@@ -1,0 +1,8 @@
+{
+  "id": "banque-16",
+  "prompt_sha256": "57064822c02f0a2cd7fa92ee0c718f038697bd2e50b37010e1a8105fbdd56987",
+  "output": "{\"categorie\": \"urgent_fraude\", \"priorite\": \"haute\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

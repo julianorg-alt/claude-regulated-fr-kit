@@ -1,0 +1,8 @@
+{
+  "id": "banque-04",
+  "prompt_sha256": "92c1c9d0632dc435fad636cb686d32f9463d85725e259cdf1a4edead8bfa0fb1",
+  "output": "Monsieur,\n\nNous avons bien pris connaissance de votre réclamation et nous vous prions de nous excuser pour le délai d'attente de votre carte de remplacement. Nous vous informons que les 15 euros de frais vous seront remboursés, à titre de geste commercial, sous 5 jours ouvrés.\n\nNous restons à votre disposition pour tout renseignement complémentaire.\n\nCordialement,\nLe service Relations clientèle",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

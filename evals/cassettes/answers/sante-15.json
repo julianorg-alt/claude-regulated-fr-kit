@@ -1,0 +1,8 @@
+{
+  "id": "sante-15",
+  "prompt_sha256": "42950faf99e89157067e8b4fa164aa0b3ee5b02df02f0fe4dd983d32e7e48d32",
+  "output": "{\"personne_a_prevenir\": \"<PERSONNE_2>\", \"lien\": \"fils\", \"email\": \"<EMAIL_1>\", \"telephone\": null}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

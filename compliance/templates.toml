@@ -1,0 +1,149 @@
+# Modèles du dossier de conformité (backlog E9.2). `make traceability` vérifie que chaque modèle existe,
+# contient chacune des sections exigées par son texte (titres de niveau 2, dans l'ordre), que chaque
+# contrôle Cnn qu'il cite existe dans controls.toml et que chaque texte cité existe dans texts.toml.
+
+[[template]]
+id = "AIPD"
+path = "docs/compliance/modeles/aipd.md"
+title = "Analyse d’impact relative à la protection des données"
+texts = ["RGPD-35", "RGPD-32", "RGPD-25"]
+sections = [
+  "1. Description du traitement et de ses finalités",
+  "2. Nécessité et proportionnalité",
+  "3. Risques pour les droits et libertés des personnes",
+  "4. Mesures envisagées",
+  "5. Avis et validation",
+]
+
+[[template]]
+id = "FRIA"
+path = "docs/compliance/modeles/fria.md"
+title = "Analyse d’impact sur les droits fondamentaux"
+texts = ["AI-ACT-27", "AI-ACT-14"]
+sections = [
+  "a) Processus dans lesquels le système est utilisé",
+  "b) Période et fréquence d’utilisation",
+  "c) Catégories de personnes et groupes concernés",
+  "d) Risques spécifiques de préjudice",
+  "e) Mesures de contrôle humain",
+  "f) Mesures en cas de matérialisation des risques",
+  "Notification",
+]
+
+[[template]]
+id = "REGISTRE-DORA"
+path = "docs/compliance/modeles/registre-dora.md"
+title = "Registre d’information sur les accords contractuels de services TIC"
+texts = ["DORA-28", "DORA-ITS-2024-2956", "DORA-9"]
+sections = [
+  "Entrée : fournisseur du modèle",
+  "Entrée : passerelle et pseudonymisation",
+  "Points à vérifier avant usage",
+]
+
+[[template]]
+id = "ANALYSE-TRANSFERTS"
+path = "docs/compliance/modeles/analyse-transferts.md"
+title = "Analyse d’impact des transferts"
+texts = ["RGPD-44", "RGPD-46", "CEPD-REC-01-2020", "RGPD-30"]
+sections = [
+  "Étape 1 : connaître les transferts",
+  "Étape 2 : instrument de transfert",
+  "Étape 3 : efficacité de l’instrument au regard du droit du pays tiers",
+  "Étape 4 : mesures supplémentaires",
+  "Étape 5 : étapes procédurales",
+  "Étape 6 : réévaluation",
+]
+
+[[template]]
+id = "GRILLE-DPA-DORA"
+path = "docs/compliance/grille-dpa-dora.md"
+title = "Grille d’écarts entre le DPA d’Anthropic et l’article 30 de DORA"
+texts = ["DORA-30"]
+sections = [
+  "Quel contrat est concerné",
+  "Grille",
+  "Rétention à signaler au comité des risques",
+  "Avenant à négocier",
+]
+
+# Fiches sectorielles (backlog E9.4).
+[[template]]
+id = "FICHE-BANQUE-ASSURANCE"
+path = "docs/compliance/fiches/banque-assurance.md"
+title = "Fiche sectorielle banque et assurance"
+texts = ["AI-ACT-26", "AI-ACT-OMNIBUS-2026", "ACPR-RIA", "EIOPA-AI-2025", "DORA-28", "DORA-30"]
+sections = [
+  "1. Textes et autorités",
+  "2. Haut risque au sens du règlement IA",
+  "3. Ce que le kit couvre",
+  "4. Ce qui reste à la charge de l’établissement",
+  "5. Points ouverts",
+]
+
+[[template]]
+id = "FICHE-SANTE"
+path = "docs/compliance/fiches/sante.md"
+title = "Fiche sectorielle santé"
+texts = ["HDS-CSP-L1111-8", "HAS-AVEC-2025", "RGPD-9", "RGPD-35", "AI-ACT-OMNIBUS-2026"]
+sections = [
+  "1. Textes et autorités",
+  "2. Limite du kit : pas de certification HDS",
+  "3. Ce que le kit couvre",
+  "4. Ce qui reste à la charge de l’établissement",
+  "5. Points ouverts",
+]
+
+[[template]]
+id = "FICHE-SECTEUR-PUBLIC"
+path = "docs/compliance/fiches/secteur-public.md"
+title = "Fiche sectorielle secteur public"
+texts = ["SREN-31", "SECNUMCLOUD", "AI-ACT-27", "AI-ACT-OMNIBUS-2026"]
+sections = [
+  "1. Textes et autorités",
+  "2. Hors périmètre : données d’une sensibilité particulière",
+  "3. Ce que le kit couvre",
+  "4. Ce qui reste à la charge de l’administration",
+  "5. Points ouverts",
+]
+
+# Information et rôles (backlog E9.5).
+[[template]]
+id = "INFORMATION-ART-50"
+path = "docs/compliance/information-article-50.md"
+title = "Information des personnes au titre de l’article 50 du règlement IA"
+texts = ["AI-ACT-50", "AI-ACT-OMNIBUS-2026"]
+sections = [
+  "1. Ce que demande l’article 50",
+  "2. Texte court, affiché à l’ouverture de l’assistant",
+  "3. Information complète",
+  "4. Textes publiés pour informer le public",
+  "5. Ce que le kit fait et ne fait pas",
+]
+
+[[template]]
+id = "ROLES-RGPD-RIA"
+path = "docs/compliance/roles-rgpd-ria.md"
+title = "Matrice des rôles RGPD et règlement IA"
+texts = ["RGPD-4-28", "AI-ACT-3-25", "RGPD-30"]
+sections = [
+  "1. Définitions retenues",
+  "2. Matrice",
+  "3. Conséquences pour le dossier",
+  "4. Points ouverts",
+]
+
+[[template]]
+id = "PLAN-SORTIE"
+path = "docs/compliance/plan-de-sortie.md"
+title = "Plan de sortie du fournisseur de modèles"
+texts = ["DORA-28-8", "DORA-30", "DORA-28"]
+sections = [
+  "1. Périmètre et déclencheurs",
+  "2. Solutions alternatives",
+  "3. Procédure de bascule",
+  "4. Données : restituer, supprimer, conserver",
+  "5. Mesure de l’écart de qualité",
+  "6. Tests et réexamen",
+  "7. Limites et points ouverts",
+]

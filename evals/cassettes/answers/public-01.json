@@ -1,0 +1,8 @@
+{
+  "id": "public-01",
+  "prompt_sha256": "c151c767f71921baca30782fc931e8d1422461bd62d5e747a2f79433a8e505f4",
+  "output": "{\"type_demande\":\"demande d'aide\",\"service_demande\":\"service Logement du CCAS\",\"pieces_jointes\":[\"bail\",\"dernier avis d'imposition\",\"RIB\"]}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "assurance-13",
+  "prompt_sha256": "9009d3aad330e24f9016dec9ffdf63208161c4b5b5012b668122e83f7fbc1fb4",
+  "output": "Madame,\n\nNous avons bien enregistré votre déclaration et votre dossier de dégât des eaux est ouvert. Un expert se rendra à votre domicile le 24 novembre 2026, entre 9 h et 12 h. Merci de lui permettre d'accéder aux pièces touchées et de conserver les objets endommagés jusqu'à sa visite.\n\nNous restons à votre disposition pour toute question.\n\nCordialement,\nLe service sinistres",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

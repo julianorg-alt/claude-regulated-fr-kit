@@ -1,0 +1,8 @@
+{
+  "id": "assurance-16",
+  "prompt_sha256": "8359dc2b6e833f8a6f43891f6789905905c19418791f8cbdba731eb4913df101",
+  "output": "{\"priorite\": \"haute\", \"motif\": \"dommage corporel déclaré : la passagère est blessée au poignet\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "holdout-assurance-02",
+  "prompt_sha256": "c3c1cfe892155b69b700b945bfa22d7625446e275806a24ac2da914696aca0e9",
+  "output": "{\"date\": \"2026-10-21\", \"ville\": \"Nantes\", \"tiers_implique\": true, \"montant_estime\": 1840}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

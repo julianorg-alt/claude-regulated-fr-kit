@@ -1,0 +1,8 @@
+{
+  "id": "assurance-17",
+  "prompt_sha256": "1bcd576dd79ca72d41fd9ba884c893ea613cbf74d1eced3debaa47a6ec2ed579",
+  "output": "La clause V1 garantit le vol en cas d'effraction constatée jusqu'à 4 000 euros ; l'effraction étant constatée et le préjudice estimé (3 200 euros) restant sous le plafond, la garantie semble s'appliquer. Après la franchise de 300 euros prévue par la clause V2, le montant indicatif est de 2 900 euros (3 200 - 300). Ce calcul est indicatif : il relève du gestionnaire sinistres, qui valide le montant.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

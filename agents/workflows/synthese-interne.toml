@@ -1,0 +1,11 @@
+# Fiche « Rule of Two » (backlog E8.4). Flux : un agent résume des dossiers pour un conseiller, à partir
+# de documents internes uniquement, et peut préparer un courriel validé par le conseiller.
+id = "synthese-interne"
+agent = "agent-synthese"
+servers = ["dossiers"]
+untrusted_input = false  # [A] documents internes seulement ; aucune pièce venue de l'extérieur
+sensitive_access = true  # [B] dossiers clients
+state_change = true      # [C] courriel et adresse, sous validation pour l'irréversible
+oversight = "human-approval-irreversible"
+owner = "responsable de l'agence"
+justification = "Deux propriétés sur trois : B et C. Les entrées non fiables sont exclues par construction (aucun document externe dans le flux)."

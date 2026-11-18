@@ -1,0 +1,8 @@
+{
+  "id": "public-19",
+  "prompt_sha256": "87ca05d81a786716efed6cc79705fabf92ff8f6e34a59d7353a7656d7b05998e",
+  "output": "Un occupant d'un logement social signale une panne de chauffage depuis cinq jours. Il demande une intervention du bailleur.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

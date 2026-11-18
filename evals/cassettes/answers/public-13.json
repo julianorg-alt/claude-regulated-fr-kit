@@ -1,0 +1,8 @@
+{
+  "id": "public-13",
+  "prompt_sha256": "881f710f54b5d8e3de3baef9884b731b48bb2a745fa0d00f870b7e8f4b28ade4",
+  "output": "{\"nature\":\"chute de branche d'arbre sur le trottoir\",\"lieu\":\"allée des Peupliers, devant l'entrée du parc\",\"urgent\":true}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

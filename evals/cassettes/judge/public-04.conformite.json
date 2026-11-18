@@ -1,0 +1,6 @@
+{
+  "answer_sha256": "51c27863c9c6777cb08fe41ed2261b4c6d5df3df8c683797b00bbd172214cf75",
+  "pass": true,
+  "score": 1,
+  "reason": "La réponse satisfait le critère : la réponse constate le dépassement du quotient familial (950 pour un plafond de 800) et laisse explicitement la décision à l'agent instructeur, sans annoncer d'attribution ni de refus définitif."
+}

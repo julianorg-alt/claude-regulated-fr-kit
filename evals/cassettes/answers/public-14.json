@@ -1,0 +1,8 @@
+{
+  "id": "public-14",
+  "prompt_sha256": "226344067928f88f5133b2063786ae4ea320cb1d9d0f0900b26b9638b6585153",
+  "output": "- Vitesse limitée à 30 km/h dans le centre-ville à compter du 1er janvier.\n- Le service Voirie installe les panneaux avant cette date.\n- Un bilan est présenté au conseil après les six premiers mois.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

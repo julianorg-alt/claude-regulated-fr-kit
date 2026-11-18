@@ -1,0 +1,8 @@
+{
+  "id": "holdout-banque-05",
+  "prompt_sha256": "442594fc2b3564b27fb1c2db871393412d8709ffe67d188f04300b746b79f646",
+  "output": "{\"categorie\": \"changement_adresse\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

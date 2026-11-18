@@ -1,0 +1,8 @@
+{
+  "id": "banque-03",
+  "prompt_sha256": "a8a5249537eed10c161a06d7ae79118f9146d4b998336b2d2e05bc40cf39c7a2",
+  "output": "{\"categorie\": \"opposition_carte\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

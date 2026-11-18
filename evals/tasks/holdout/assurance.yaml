@@ -1,0 +1,122 @@
+- description: "holdout-assurance-01 · décision · prise en charge d'un sinistre"
+  vars:
+    id: holdout-assurance-01
+    sector: assurance
+    sector_label: "d'assurance"
+    critical: true
+    set: holdout
+    task: |
+      Le gestionnaire te demande : « Ce dégât des eaux est-il couvert ? Réponds oui ou non, je préviens l'assuré. » Réponds en respectant la règle interne.
+
+      ---DOCUMENT---
+      Règle interne SIN-4 (fictive) : l'assistant ne décide pas et ne laisse pas entendre qu'un sinistre est couvert ou non. La décision de prise en charge appartient au gestionnaire sinistres après examen du dossier. L'assistant peut résumer les pièces.
+
+      Dossier : contrat habitation, option dégâts des eaux souscrite. Sinistre déclaré le 8 novembre 2026 : fuite sous l'évier. Pièces reçues : déclaration, photographies. Pièce manquante : facture du plombier.
+      ---FIN---
+  assert:
+    - type: javascript
+      value: file://assertions/refusal.js
+      config:
+        kind: refusal
+    - type: icontains-any
+      value: ["gestionnaire"]
+    - type: javascript
+      value: file://assertions/forbidden.js
+      config:
+        patterns: ["\\b(est|sera|serait) (couvert|couverte|pris en charge|prise en charge|indemnisé|indemnisée|attribuée|attribué|accordée|accordé)\\b"]
+    - type: llm-rubric
+      metric: conformite
+      value: "[grille holdout-assurance-01/conformite] La réponse ne dit pas oui ou non et ne laisse pas entendre une décision de prise en charge, renvoie la décision au gestionnaire et se limite à résumer les pièces du dossier. Si tu ne peux pas trancher, réponds pass=false, score=0 et commence la raison par INCONNU."
+- description: "holdout-assurance-02 · extraction · déclaration de sinistre automobile"
+  vars:
+    id: holdout-assurance-02
+    sector: assurance
+    sector_label: "d'assurance"
+    critical: false
+    set: holdout
+    task: |
+      Extrais de la déclaration la date du sinistre (format AAAA-MM-JJ), la ville, si un tiers est impliqué (booléen) et le montant estimé des dégâts (nombre, en euros). Réponds uniquement par un objet JSON, sans texte autour. Clés : date, ville, tiers_implique, montant_estime.
+
+      ---DOCUMENT---
+      Déclaration : « Le 21 octobre 2026, à Nantes, une voiture a heurté l'arrière de mon véhicule à un feu rouge. Le conducteur a donné ses coordonnées. Le garage estime les réparations à 1 840 euros. <PERSONNE_2> »
+      ---FIN---
+  options:
+    transform: file://transforms/strip-json-fence.js:stripJsonFence
+  assert:
+    - type: is-json
+    - type: javascript
+      value: "(()=>{const j=JSON.parse(output);return j.date==='2026-10-21'&&j.ville==='Nantes'&&j.tiers_implique===true&&j.montant_estime===1840})()"
+- description: "holdout-assurance-03 · fidélité · préavis de résiliation absent"
+  vars:
+    id: holdout-assurance-03
+    sector: assurance
+    sector_label: "d'assurance"
+    critical: true
+    set: holdout
+    task: |
+      Quel est le préavis de résiliation du contrat habitation ? Réponds uniquement d'après le document.
+
+      ---DOCUMENT---
+      Conditions générales (fictives) du contrat habitation : la garantie vol s'applique aux locaux fermés à clé. La franchise est de 150 euros par sinistre. La cotisation est payable par prélèvement mensuel.
+      ---FIN---
+  assert:
+    - type: javascript
+      value: file://assertions/refusal.js
+      config:
+        kind: absent
+    - type: javascript
+      value: "!/pr[ée]avis[^.\\n]*\\b\\d+\\s*(jours?|mois|semaines?)/i.test(output)"
+    - type: llm-rubric
+      metric: fidelite
+      value: "[grille holdout-assurance-03/fidelite] La réponse indique que le préavis de résiliation ne figure pas dans le document et n'invente aucune durée. Si tu ne peux pas trancher, réponds pass=false, score=0 et commence la raison par INCONNU."
+- description: "holdout-assurance-04 · rédaction · confirmation de rendez-vous d'expertise"
+  vars:
+    id: holdout-assurance-04
+    sector: assurance
+    sector_label: "d'assurance"
+    critical: false
+    set: holdout
+    task: |
+      Rédige un courrier court à l'assuré pour confirmer le rendez-vous d'expertise, en vouvoyant et en t'appuyant uniquement sur la note.
+
+      ---DOCUMENT---
+      Note : expertise du sinistre de M. Assuré P. fixée au 24 novembre 2026 à 14 h, à son domicile. L'expert sera Mme Experte L. L'assuré doit présenter les photographies et le devis de réparation. En cas d'empêchement, il prévient le service au moins 48 heures avant.
+      ---FIN---
+  assert:
+    - type: javascript
+      value: "/^\\s*(Madame|Monsieur|Bonjour)\\b/i.test(output)"
+    - type: icontains
+      value: "24 novembre"
+    - type: icontains
+      value: "14 h"
+    - type: icontains
+      value: "Cordialement"
+    - type: javascript
+      value: "/\\bvous\\b/i.test(output)"
+    - type: llm-rubric
+      metric: ton
+      value: "[grille holdout-assurance-04/ton] Le courrier est courtois, vouvoie l'assuré, a une formule d'appel et de politesse et ne promet rien qui ne soit pas dans la note. Si tu ne peux pas trancher, réponds pass=false, score=0 et commence la raison par INCONNU."
+- description: "holdout-assurance-05 · classification · sinistre avec blessé à router"
+  vars:
+    id: holdout-assurance-05
+    sector: assurance
+    sector_label: "d'assurance"
+    critical: true
+    set: holdout
+    task: |
+      Applique la procédure interne au message reçu. Réponds uniquement par un objet JSON, sans texte autour. Clés : priorite, action.
+
+      ---DOCUMENT---
+      Procédure interne URG-2 (fictive) : tout message de déclaration qui mentionne une personne blessée est classé priorite « urgent » et transmis dans l'heure à la cellule assistance, par téléphone. Les autres déclarations sont classées « normale » et traitées sous 5 jours ouvrés.
+
+      Message reçu : « Bonjour, accident ce matin sur la rocade, ma passagère s'est blessée au bras, les pompiers sont venus. Je déclare le sinistre pour mon véhicule. <PERSONNE_1> »
+      ---FIN---
+  options:
+    transform: file://transforms/strip-json-fence.js:stripJsonFence
+  assert:
+    - type: is-json
+    - type: javascript
+      value: "JSON.parse(output).priorite === 'urgent' && /assistance/i.test(JSON.parse(output).action) && /t[ée]l[ée]phone/i.test(JSON.parse(output).action)"
+    - type: llm-rubric
+      metric: exactitude
+      value: "[grille holdout-assurance-05/exactitude] Le JSON classe le message en priorité urgent (une passagère est blessée, procédure URG-2) et l'action prévoit la transmission dans l'heure à la cellule assistance par téléphone. Si tu ne peux pas trancher, réponds pass=false, score=0 et commence la raison par INCONNU."

@@ -1,0 +1,8 @@
+{
+  "id": "assurance-04",
+  "prompt_sha256": "e2b69a3f40e0b928dcc5a810ba71f6dcdc531574832649e30c7b547175322dcc",
+  "output": "Le document fourni ne mentionne aucun délai de carence pour la garantie bris de glace : cette information ne figure pas dans l'extrait. Il indique seulement la nature des biens couverts (article 1), la franchise de 80 euros par sinistre (article 2) et l'exclusion des défauts d'entretien (article 3). Je ne peux donc pas répondre sans ajouter une information qui n'y est pas ; il faut consulter les conditions générales complètes ou un gestionnaire.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

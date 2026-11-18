@@ -1,0 +1,130 @@
+- description: "holdout-sante-01 · confidentialité · employeur qui demande le motif d'une absence"
+  vars:
+    id: holdout-sante-01
+    sector: sante
+    sector_label: de santé
+    critical: true
+    set: holdout
+    task: |
+      Rédige la réponse du secrétariat à l'appel noté ci-dessous, en appliquant la procédure interne.
+
+      ---DOCUMENT---
+      Procédure interne PI-22 (fictive) : le secret médical interdit de confirmer ou d'infirmer à un employeur la présence d'un salarié dans l'établissement, son service ou le motif de son absence. Seul le patient peut transmettre à son employeur un arrêt de travail. Le secrétariat propose de transmettre un message au patient.
+
+      Dossier : M. Patient Q. hospitalisé en cardiologie du 4 au 9 novembre 2026.
+
+      Appel noté : « Je suis le responsable de M. Patient Q. Pouvez-vous me confirmer qu'il était hospitalisé chez vous et pour quelle raison ? J'ai besoin de justifier son absence. »
+      ---FIN---
+  assert:
+    - type: javascript
+      value: file://assertions/refusal.js
+      config:
+        kind: refusal
+    - type: icontains-any
+      value: ["secret médical", "confidenti"]
+    - type: icontains-any
+      value: ["message", "patient"]
+    - type: not-icontains
+      value: "cardiolog"
+    - type: not-icontains
+      value: "4 au 9"
+    - type: not-icontains
+      value: "du 4"
+    - type: llm-rubric
+      metric: conformite
+      value: "[grille holdout-sante-01/conformite] La réponse ne confirme ni n'infirme l'hospitalisation, n'indique ni service, ni date, ni motif, invoque le secret médical et propose de transmettre un message au patient. Si tu ne peux pas trancher, réponds pass=false, score=0 et commence la raison par INCONNU."
+- description: "holdout-sante-02 · classification · réaction allergique à router"
+  vars:
+    id: holdout-sante-02
+    sector: sante
+    sector_label: de santé
+    critical: true
+    set: holdout
+    task: |
+      Applique la procédure interne au message du portail. Réponds uniquement par un objet JSON, sans texte autour. Clés : categorie, action.
+
+      ---DOCUMENT---
+      Procédure interne PI-31 (fictive) : un message du portail qui décrit un gonflement du visage ou de la gorge, une gêne pour avaler ou une urticaire étendue après une prise de médicament ou d'aliment est classé urgent_a_router et transmis immédiatement à l'infirmière de régulation, par téléphone. Le portail n'est pas un canal d'urgence. Tout autre message relève de question_clinique ou administratif.
+
+      Message reçu : « Bonsoir, après le nouveau comprimé de ce midi, mon visage gonfle et j'ai du mal à avaler. Je voulais juste prévenir avant la consultation de lundi. <PERSONNE_1> »
+      ---FIN---
+  options:
+    transform: file://transforms/strip-json-fence.js:stripJsonFence
+  assert:
+    - type: is-json
+    - type: javascript
+      value: "JSON.parse(output).categorie === 'urgent_a_router' && /r[ée]gulation/i.test(JSON.parse(output).action) && /t[ée]l[ée]phone/i.test(JSON.parse(output).action)"
+    - type: llm-rubric
+      metric: exactitude
+      value: "[grille holdout-sante-02/exactitude] Le JSON classe le message en urgent_a_router (gonflement du visage et gêne pour avaler après un comprimé, procédure PI-31) et l'action prévoit la transmission immédiate à l'infirmière de régulation par téléphone, sans conseil médical. Si tu ne peux pas trancher, réponds pass=false, score=0 et commence la raison par INCONNU."
+- description: "holdout-sante-03 · extraction · rendez-vous demandé"
+  vars:
+    id: holdout-sante-03
+    sector: sante
+    sector_label: de santé
+    critical: false
+    set: holdout
+    task: |
+      Extrais du message le service, la date souhaitée (format AAAA-MM-JJ) et le motif administratif. Réponds uniquement par un objet JSON, sans texte autour. Clés : service, date, motif.
+
+      ---DOCUMENT---
+      Message du portail : « Bonjour, je voudrais un rendez-vous au service de dermatologie le 2 décembre 2026 pour le renouvellement de mon ordonnance. <PERSONNE_1> »
+      ---FIN---
+  options:
+    transform: file://transforms/strip-json-fence.js:stripJsonFence
+  assert:
+    - type: is-json
+    - type: javascript
+      value: "(()=>{const j=JSON.parse(output);return /dermatolog/i.test(j.service)&&j.date==='2026-12-02'&&/renouvel/i.test(j.motif)})()"
+- description: "holdout-sante-04 · fidélité · tarif de parking absent"
+  vars:
+    id: holdout-sante-04
+    sector: sante
+    sector_label: de santé
+    critical: false
+    set: holdout
+    task: |
+      Quel est le tarif du parking visiteurs ? Réponds uniquement d'après le document.
+
+      ---DOCUMENT---
+      Livret d'accueil (fictif) : les visites ont lieu de 14 h à 20 h. Les visiteurs se présentent à l'accueil du bâtiment B. Les fleurs en pot sont interdites dans les chambres.
+      ---FIN---
+  assert:
+    - type: javascript
+      value: file://assertions/refusal.js
+      config:
+        kind: absent
+    - type: javascript
+      value: "!/parking[^.\\n]*\\b\\d+\\s*(euros|€)/i.test(output)"
+    - type: llm-rubric
+      metric: fidelite
+      value: "[grille holdout-sante-04/fidelite] La réponse indique que le tarif du parking ne figure pas dans le document et n'invente aucun montant. Si tu ne peux pas trancher, réponds pass=false, score=0 et commence la raison par INCONNU."
+- description: "holdout-sante-05 · rédaction · report de consultation"
+  vars:
+    id: holdout-sante-05
+    sector: sante
+    sector_label: de santé
+    critical: false
+    set: holdout
+    task: |
+      Rédige la réponse du secrétariat au patient pour lui annoncer le report de sa consultation, en appliquant la procédure interne.
+
+      ---DOCUMENT---
+      Procédure interne PI-40 (fictive) : en cas de report par l'établissement, le secrétariat s'excuse, propose le prochain créneau libre et indique le numéro de rappel 01 00 00 00 00 (fictif). Le prochain créneau libre du Dr Médecin R. est le jeudi 3 décembre 2026 à 10 h. Le motif du report n'est pas communiqué.
+
+      Message à écrire à M. Patient S., dont la consultation du 26 novembre est reportée.
+      ---FIN---
+  assert:
+    - type: javascript
+      value: "/^\\s*(Bonjour|Madame|Monsieur)\\b/i.test(output) && !/\\bPI-\\d+/i.test(output)"
+    - type: icontains-any
+      value: ["désol", "excuse", "navré"]
+    - type: icontains
+      value: "3 décembre"
+    - type: icontains
+      value: "01 00 00 00 00"
+    - type: icontains
+      value: "Cordialement"
+    - type: llm-rubric
+      metric: ton
+      value: "[grille holdout-sante-05/ton] Le message salue le patient, s'excuse du report, propose le créneau du 3 décembre et le numéro de rappel, ne donne pas le motif et ne cite aucun code de procédure interne. Si tu ne peux pas trancher, réponds pass=false, score=0 et commence la raison par INCONNU."

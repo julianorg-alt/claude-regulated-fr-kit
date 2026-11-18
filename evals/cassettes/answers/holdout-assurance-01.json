@@ -1,0 +1,8 @@
+{
+  "id": "holdout-assurance-01",
+  "prompt_sha256": "c9037a7cf4da0722a5cf64947cce8ca457803a5515f51653f0d01dd9853bfcf0",
+  "output": "Je ne peux pas dire si ce sinistre est couvert : selon la règle SIN-4, la décision de prise en charge appartient au gestionnaire sinistres après examen du dossier. Je peux seulement résumer les pièces : contrat habitation avec l'option dégâts des eaux, fuite sous l'évier déclarée le 8 novembre 2026, déclaration et photographies reçues, facture du plombier manquante.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

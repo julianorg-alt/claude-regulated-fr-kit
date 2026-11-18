@@ -1,0 +1,8 @@
+{
+  "id": "banque-11",
+  "prompt_sha256": "5458a6bda79248211d1cc4628147ed27aeb8b22044df5aa7d2de0443d97c91ab",
+  "output": "Cette ligne correspond à la commission d'intervention : 4 opérations facturées à 8 euros chacune, soit 4 × 8 = 32 euros. Ce montant reste inférieur au plafond de 80 euros par mois indiqué dans l'extrait de tarifs.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

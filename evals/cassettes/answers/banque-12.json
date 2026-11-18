@@ -1,0 +1,8 @@
+{
+  "id": "banque-12",
+  "prompt_sha256": "ad36016e838f7554675c52f6753f129ba4b185b70a8308c8f803c0ceac28a540",
+  "output": "Monsieur,\n\nNous regrettons que le rappel promis ne vous ait pas été donné et nous vous présentons nos excuses. Nous transmettons votre demande au service concerné afin qu'un conseiller vous contacte rapidement. Merci de nous indiquer le créneau qui vous convient le mieux.\n\nCordialement,\nLe service Relations clientèle",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

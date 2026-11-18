@@ -1,0 +1,8 @@
+{
+  "id": "sante-19",
+  "prompt_sha256": "0c872d1a3cf561129fcdc666acb90ddc900ee9b16f785d57addfba7b4bb78d89",
+  "output": "{\"categorie\": \"question_clinique\", \"destinataire\": \"infirmière de coordination\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

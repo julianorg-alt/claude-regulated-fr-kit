@@ -1,0 +1,8 @@
+{
+  "id": "assurance-02",
+  "prompt_sha256": "d8d26de1b1ed8cd12958e0400db3ac92d5c96c47a2596314cf950cab630c0d8c",
+  "output": "M. Assuré A déclare le vol de son vélo à assistance électrique dans la cave collective de son immeuble, constaté le 3 octobre 2026, le cadenas ayant été coupé. Il a déposé plainte le jour même et estime la valeur du vélo à 2100 euros, facture d'achat jointe. Aucun témoin n'est mentionné.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

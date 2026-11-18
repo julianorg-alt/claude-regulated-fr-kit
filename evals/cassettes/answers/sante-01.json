@@ -1,0 +1,8 @@
+{
+  "id": "sante-01",
+  "prompt_sha256": "2072ae0714e64349094b46ed991f46ecb48010108cdeb3ab864ea6f36042efa4",
+  "output": "Patient <PERSONNE_1>, consultation de cardiologie du 12 mars 2026 pour le suivi de palpitations.\nÀ organiser avant la prochaine consultation : un électrocardiogramme (ECG) de contrôle et un bilan sanguin.\nProchain rendez-vous : 14 avril 2026 à 10 h 30, service de cardiologie.\nUn courrier est à adresser au médecin traitant, <PERSONNE_3>.\nLe compte rendu ne signale aucun autre point.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

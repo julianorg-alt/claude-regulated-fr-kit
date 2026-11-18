@@ -1,0 +1,7 @@
+The synthetic data set in this directory (v1.jsonl, v1-test.jsonl and the files in results/) is
+licensed under the Creative Commons Attribution 4.0 International licence (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: "claude-regulated-fr synthetic French PII data set".
+
+The generator (../generate.py) is code and is licensed under Apache-2.0, like the rest of the repository.

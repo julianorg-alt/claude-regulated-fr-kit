@@ -1,0 +1,8 @@
+{
+  "id": "sante-17",
+  "prompt_sha256": "4ed57945e0c90ebbb78923eb48d58cd8620d991c90292091225480c651a8f947",
+  "output": "Bonjour,\n\nNous sommes désolés : votre rendez-vous du 9 juin 2026 en ophtalmologie est annulé, le médecin étant indisponible. Nous vous proposons un nouveau créneau le 19 juin 2026 à 14 h 00. Si cette date ne vous convient pas, merci de contacter le secrétariat indiqué sur votre convocation.\n\nNous vous prions de nous excuser pour ce désagrément.\n\nCordialement,\nLe service d'ophtalmologie",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

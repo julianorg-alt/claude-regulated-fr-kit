@@ -1,0 +1,8 @@
+{
+  "id": "banque-07",
+  "prompt_sha256": "92cb57eaefcad89ce3e7dcbd36522f66c92fadb0996d7f41fa1ee520fabd6a33",
+  "output": "{\"est_reclamation\": true, \"delai_accuse_reception_jours_ouvres\": 3, \"delai_reponse_jours_ouvres\": 15}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

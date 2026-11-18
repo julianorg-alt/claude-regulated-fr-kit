@@ -1,0 +1,8 @@
+{
+  "id": "public-16",
+  "prompt_sha256": "8f4f76ce66f7771fba7ead43123220bf7b6e38131e5864dc4e1902d3ff674912",
+  "output": "Oui. Le service Mobilité tient une permanence le mercredi de 14 h à 17 h, et le dépôt des dossiers de carte de transport se fait pendant les permanences.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

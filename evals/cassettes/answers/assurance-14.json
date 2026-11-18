@@ -1,0 +1,8 @@
+{
+  "id": "assurance-14",
+  "prompt_sha256": "37fdd8f5022bbed70d0b23ab3e8a485adede8ec5099155d2664c986a86aa96af",
+  "output": "{\"date_sinistre\": \"2026-09-18\", \"tiers_implique\": true, \"blesses\": false, \"montant_estime\": 3400}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

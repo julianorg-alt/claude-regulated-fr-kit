@@ -1,0 +1,8 @@
+{
+  "id": "sante-08",
+  "prompt_sha256": "670efce09e0b737cb68eb332090915b99e832942f8f2e336a69c283803654173",
+  "output": "Bonjour,\n\nNous comprenons que cette attente soit source d'inquiétude et nous vous remercions de votre message. Le secrétariat n'est pas en mesure d'interpréter un examen : seul le médecin peut le faire avec vous.\n\nNous vous proposons un créneau de remise de résultats avec le médecin, les mardis après-midi. Dites-nous si cela vous convient et nous réserverons la date la plus proche.\n\nCordialement,\nLe secrétariat",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

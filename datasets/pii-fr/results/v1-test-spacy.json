@@ -1,0 +1,722 @@
+{
+  "documents": 100,
+  "negatives_detected": {},
+  "modes": {
+    "strict": {
+      "all": {
+        "ADRESSE": {
+          "gold": 100,
+          "tp": 100,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CARTE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 100,
+          "tp": 100,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "gold": 75,
+          "tp": 75,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IBAN": {
+          "gold": 75,
+          "tp": 75,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NIR": {
+          "gold": 50,
+          "tp": 50,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 75,
+          "tp": 68,
+          "fp": 105,
+          "precision": 0.3931,
+          "recall": 0.9067,
+          "f1": 0.5484
+        },
+        "PERSONNE": {
+          "gold": 125,
+          "tp": 124,
+          "fp": 1,
+          "precision": 0.992,
+          "recall": 0.992,
+          "f1": 0.992
+        },
+        "SIREN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "SIRET": {
+          "gold": 50,
+          "tp": 50,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "TELEPHONE": {
+          "gold": 100,
+          "tp": 100,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "assurance": {
+        "ADRESSE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IBAN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 25,
+          "tp": 23,
+          "fp": 16,
+          "precision": 0.5897,
+          "recall": 0.92,
+          "f1": 0.7188
+        },
+        "PERSONNE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 1,
+          "precision": 0.9615,
+          "recall": 1.0,
+          "f1": 0.9804
+        },
+        "SIRET": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "TELEPHONE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "banque": {
+        "ADRESSE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CARTE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IBAN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 25,
+          "tp": 22,
+          "fp": 24,
+          "precision": 0.4783,
+          "recall": 0.88,
+          "f1": 0.6197
+        },
+        "PERSONNE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "SIREN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "TELEPHONE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "public": {
+        "ADRESSE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IBAN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NIR": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 25,
+          "tp": 23,
+          "fp": 41,
+          "precision": 0.3594,
+          "recall": 0.92,
+          "f1": 0.5169
+        },
+        "PERSONNE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "SIRET": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "TELEPHONE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "sante": {
+        "ADRESSE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NIR": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 0,
+          "tp": 0,
+          "fp": 24,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "PERSONNE": {
+          "gold": 50,
+          "tp": 49,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.98,
+          "f1": 0.9899
+        },
+        "TELEPHONE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "identifiers_recall": 1.0
+    },
+    "overlap": {
+      "all": {
+        "ADRESSE": {
+          "gold": 100,
+          "tp": 100,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CARTE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 100,
+          "tp": 100,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "gold": 75,
+          "tp": 75,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IBAN": {
+          "gold": 75,
+          "tp": 75,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NIR": {
+          "gold": 50,
+          "tp": 50,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 75,
+          "tp": 74,
+          "fp": 99,
+          "precision": 0.4277,
+          "recall": 0.9867,
+          "f1": 0.5968
+        },
+        "PERSONNE": {
+          "gold": 125,
+          "tp": 124,
+          "fp": 1,
+          "precision": 0.992,
+          "recall": 0.992,
+          "f1": 0.992
+        },
+        "SIREN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "SIRET": {
+          "gold": 50,
+          "tp": 50,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "TELEPHONE": {
+          "gold": 100,
+          "tp": 100,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "assurance": {
+        "ADRESSE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IBAN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 25,
+          "tp": 24,
+          "fp": 15,
+          "precision": 0.6154,
+          "recall": 0.96,
+          "f1": 0.75
+        },
+        "PERSONNE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 1,
+          "precision": 0.9615,
+          "recall": 1.0,
+          "f1": 0.9804
+        },
+        "SIRET": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "TELEPHONE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "banque": {
+        "ADRESSE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "CARTE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IBAN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 21,
+          "precision": 0.5435,
+          "recall": 1.0,
+          "f1": 0.7042
+        },
+        "PERSONNE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "SIREN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "TELEPHONE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "public": {
+        "ADRESSE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "EMAIL": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "IBAN": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NIR": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 39,
+          "precision": 0.3906,
+          "recall": 1.0,
+          "f1": 0.5618
+        },
+        "PERSONNE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "SIRET": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "TELEPHONE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "sante": {
+        "ADRESSE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "DATE_NAISSANCE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "NIR": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "ORGANISATION": {
+          "gold": 0,
+          "tp": 0,
+          "fp": 24,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "PERSONNE": {
+          "gold": 50,
+          "tp": 49,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.98,
+          "f1": 0.9899
+        },
+        "TELEPHONE": {
+          "gold": 25,
+          "tp": 25,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "identifiers_recall": 1.0
+    }
+  },
+  "detector": "spaCy fr_core_news_md (default)",
+  "python": "3.13.18"
+}

@@ -1,0 +1,147 @@
+# Local reference stack (decision K3): no AWS account, no API key.
+# The fake Bedrock enforces what the Terraform IAM policy enforces in a real account.
+#
+# Networks (E2.7): "backend" is internal (no route out of the host); only the gateway and Keycloak
+# also sit on "edge", which carries the two ports published on 127.0.0.1. The guard, OPA and the
+# fake Bedrock cannot reach the Internet, and no administration interface is published.
+name: crfr
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak@sha256:9409c59bdfb65dbffa20b11e6f18b8abb9281d480c7ca402f51ed3d5977e6007 # 26.4
+    # The admin console and admin REST API are disabled (E2.7): the realm is imported at start-up.
+    command: ["start-dev", "--import-realm", "--http-port=8080", "--hostname=http://keycloak:8080", "--health-enabled=true",
+              "--features-disabled=admin,admin-api"]
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: local-demo-only
+    volumes:
+      - ./keycloak/realm-crfr.json:/opt/keycloak/data/import/realm-crfr.json:ro
+    ports:
+      - "127.0.0.1:${CRFR_KEYCLOAK_PORT:-8081}:8080"
+    healthcheck:
+      test: ["CMD-SHELL", "exec 3<>/dev/tcp/127.0.0.1/9000 && printf 'GET /health/ready HTTP/1.0\\r\\n\\r\\n' >&3 && grep -q UP <&3"]
+      interval: 5s
+      timeout: 3s
+      retries: 40
+    networks: [edge, backend]
+
+  fake-bedrock:
+    build: ./fake-bedrock
+    environment:
+      FAKE_BEDROCK_REGION: eu-west-3
+      ALLOWED_PROFILES: ${ALLOWED_PROFILES:-eu.anthropic.claude-sonnet-5,eu.anthropic.claude-opus-5-5,eu.anthropic.claude-haiku-4-5-20251001-v1:0}
+    volumes:
+      - fake-bedrock-data:/data
+    networks: [backend]
+
+  opa:
+    image: docker.io/openpolicyagent/opa@sha256:12cecac5a174368f7d3f09d3a19d040ebe0c91d576e520335ae7a985a26e39d3 # 1.22.4-static
+    # Policy files are mounted read-only; tests (*_test.rego) are not loaded. No published port.
+    command: ["run", "--server", "--addr=0.0.0.0:8181", "--disable-telemetry", "--log-level=error",
+              "/policy/gateway.rego", "/policy/config.rego"]
+    volumes:
+      - ../policy/gateway:/policy:ro
+    networks: [backend]
+
+  guard:
+    build:
+      context: ..
+      dockerfile: gateway/guard/Dockerfile
+    environment:
+      GUARD_CONFIG: /config/guard.json
+      # Local demo key for the audit fingerprints and MAC chain (E5.1). In AWS: a KMS HMAC key (KmsMac).
+      CRFR_AUDIT_KEY: 6c6f63616c2d64656d6f2d6f6e6c792d6c6f63616c2d64656d6f2d6f6e6c7921
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-collector:4318
+    volumes:
+      - ./config/guard.json:/config/guard.json:ro
+      - guard-data:/data
+    networks: [backend]
+    depends_on:
+      opa:
+        condition: service_started
+
+  otel-collector:
+    # Receives the guard's GenAI spans (no content) and prints them: stand-in for the SIEM (E5.3).
+    image: docker.io/otel/opentelemetry-collector-contrib@sha256:ffc818ee108d0b934fd14207fd87ff247c9b64f344ed349d0b66c166c18a2312 # 0.140.0
+    command: ["--config=/etc/otelcol/config.yaml"]
+    volumes:
+      - ./config/otel-collector.yaml:/etc/otelcol/config.yaml:ro
+    networks: [backend]
+
+  audit-store:
+    # S3-compatible storage with Object Lock, standing in for S3 locally (E5.2, decision K14). No published port.
+    image: docker.io/rustfs/rustfs@sha256:ee717072290bec9b11abfc0365f8310b00df1cd9b3639943edae47bdef05044a # 1.0.6
+    environment:
+      RUSTFS_ACCESS_KEY: local-audit
+      RUSTFS_SECRET_KEY: local-demo-only-audit
+    volumes:
+      - audit-store-data:/data
+    networks: [backend]
+
+  audit-shipper:
+    # Same image as the guard, other process and credentials: copies closed audit segments to the store.
+    build:
+      context: ..
+      dockerfile: gateway/guard/Dockerfile
+    command: ["python", "-s", "-E", "-m", "crfr_guard.shipper"]
+    environment:
+      AWS_ACCESS_KEY_ID: local-audit
+      AWS_SECRET_ACCESS_KEY: local-demo-only-audit
+      AUDIT_S3_ENDPOINT: http://audit-store:9000
+      AUDIT_S3_BUCKET: crfr-audit
+      AUDIT_S3_REGION: eu-west-3
+      AUDIT_SEGMENT_S: "5"
+      AUDIT_SHIP_INTERVAL_S: "2"
+      # Local only: one day, so that a demo leaves nothing locked for months. Terraform enforces 180 to 365 days.
+      AUDIT_CREATE_BUCKET_DAYS: "1"
+    volumes:
+      - guard-data:/data
+    networks: [backend]
+    healthcheck:
+      # Healthy once the bucket exists and the loop runs: the heartbeat is touched after each pass.
+      test: ["CMD", "python", "-c", "import os,sys,time;sys.exit(time.time()-os.path.getmtime('/tmp/shipper-alive')>30)"]
+      interval: 5s
+      timeout: 2s
+      start_period: 60s
+    depends_on:
+      audit-store:
+        condition: service_started
+
+  aigw:
+    image: docker.io/envoyproxy/ai-gateway-cli@sha256:8cf74cf68ffdda6c7458ddb92686d24b7a954e98eb805e7a6faa4cd8303b7a74 # v1.2.1
+    # AIGW_CONFIG=aigw-switch.yaml starts the exit drill (E10.2): the primary aliases go to the second provider.
+    command: ["run", "/config/${AIGW_CONFIG:-aigw.yaml}"]
+    environment:
+      # Fake credentials: the fake Bedrock only checks that requests are SigV4-signed for eu-west-3.
+      AWS_ACCESS_KEY_ID: AKIAFAKEFAKEFAKE0000
+      AWS_SECRET_ACCESS_KEY: local-demo-only
+      # Key of the fake exit provider (E10.1), a demo value. In production: a secret injected at start-up.
+      EXIT_PROVIDER_API_KEY: local-demo-only-exit-key
+      ENVOY_VERSION: "1.39.6"
+      AIGW_CONFIG_HOME: /etc/aigw
+    volumes:
+      - ./config:/config:ro
+      - ./config/aigw-home:/etc/aigw:ro
+    ports:
+      - "127.0.0.1:${CRFR_GATEWAY_PORT:-1975}:1975"
+    networks:
+      edge: {}
+      backend:
+        aliases: [aigw]
+    depends_on:
+      guard:
+        condition: service_healthy
+      fake-bedrock:
+        condition: service_healthy
+      keycloak:
+        condition: service_healthy
+
+networks:
+  edge: {}
+  backend:
+    internal: true
+
+volumes:
+  fake-bedrock-data:
+  guard-data:
+  audit-store-data:

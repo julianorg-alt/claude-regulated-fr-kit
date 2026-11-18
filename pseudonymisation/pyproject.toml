@@ -1,0 +1,40 @@
+[project]
+name = "crfr-pseudo"
+version = "0.1.0"
+description = "Pseudonymisation of French personal data for the claude-regulated-fr gateway (backlog E3)"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "presidio-analyzer==2.2.366",
+  "spacy==3.8.18",
+  "fr-core-news-md",
+  "cryptography==50.0.2",
+]
+
+[project.optional-dependencies]
+# Optional NER backend (decision K10). Heavy (PyTorch): not in the default image; see README.
+gliner = ["gliner==0.2.30"]
+
+[tool.uv.sources]
+fr-core-news-md = { url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.8.0/fr_core_news_md-3.8.0-py3-none-any.whl" }
+
+[dependency-groups]
+dev = ["pytest==8.4.2", "ruff==0.16.9"]
+
+[build-system]
+requires = ["hatchling==1.33.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["crfr_pseudo"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "S", "UP"]
+ignore = ["S101"]

@@ -1,0 +1,8 @@
+{
+  "id": "sante-03",
+  "prompt_sha256": "9bb097149b8134a289014c0caf6a9d6cb2f2ad2190e56a81110ed1c882bf9303",
+  "output": "Lettre de sortie de <PERSONNE_1>\n\nMotif d'hospitalisation\n- Intervention programmée, détail dans le compte rendu opératoire joint.\n\nDéroulement du séjour\n- Entrée le 2 mai 2026, sortie le 6 mai 2026, service de chirurgie digestive.\n- Suites simples selon les notes de l'infirmière.\n\nTraitement de sortie\n- Voir l'ordonnance jointe (non recopiée).\n\nSuivi\n- Consultation de contrôle le 3 juin 2026.\n- Pansement par un infirmier libéral.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

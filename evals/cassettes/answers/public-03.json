@@ -1,0 +1,8 @@
+{
+  "id": "public-03",
+  "prompt_sha256": "aa4bd6d76ce653d0e67c8f37ba06ef7a358f1de6ab82f5f7e942966948d94868",
+  "output": "{\"pieces_manquantes\":[\"justificatif de domicile de moins de trois mois\",\"dernier avis d'imposition\"]}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

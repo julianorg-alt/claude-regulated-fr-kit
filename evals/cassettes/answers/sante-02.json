@@ -1,0 +1,8 @@
+{
+  "id": "sante-02",
+  "prompt_sha256": "de2ca6e9e09e7358e370458cfad8bdd942151bcb9eb2b6d535d60185c43ac684",
+  "output": "{\"patient\": \"<PERSONNE_1>\", \"service\": \"pneumologie\", \"date\": \"2026-04-23\", \"heure\": \"09:15\", \"lieu\": \"bâtiment B, 2e étage, accueil 4\", \"documents_a_apporter\": [\"carte Vitale\", \"attestation de mutuelle\", \"derniers examens\"]}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

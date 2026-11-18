@@ -1,0 +1,8 @@
+{
+  "id": "public-15",
+  "prompt_sha256": "918023c59dae9f24f67b914b1d57f945cee7c878eb5332af13c2d26f57c7d98f",
+  "output": "Monsieur,\n\nNous avons bien reçu votre formulaire de demande de carte de stationnement résidentiel et nous vous en remercions.\n\nPour poursuivre l'examen de votre dossier, il nous manque deux pièces :\n- un justificatif de domicile de moins de trois mois ;\n- votre avis d'imposition.\n\nVous pouvez nous les transmettre par courrier ou en les déposant à l'accueil.\n\nCordialement,\nLe service Stationnement de la Commune",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

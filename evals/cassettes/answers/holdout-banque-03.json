@@ -1,0 +1,8 @@
+{
+  "id": "holdout-banque-03",
+  "prompt_sha256": "44ccbef9eec9e47ff96c3967c29b471d1fb40aa8829726b6a8f324d542b8dd62",
+  "output": "{\"montant\": 2300.5, \"date\": \"2026-09-03\", \"autorise\": false}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

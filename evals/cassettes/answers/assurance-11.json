@@ -1,0 +1,8 @@
+{
+  "id": "assurance-11",
+  "prompt_sha256": "2a484e2ef1f64827c76c43fe6a935288a1a7fc9b3c13b2f0ef2ef6185d793512",
+  "output": "Différences entre les deux formules :\n- Dégât des eaux, plafond : 5 000 euros (Essentielle) contre 10 000 euros (Confort).\n- Dégât des eaux, franchise : 300 euros (Essentielle) contre 150 euros (Confort).\n- Bris de glace : non inclus dans Essentielle, inclus dans Confort.\n- Vol, plafond : 2 000 euros (Essentielle) contre 5 000 euros (Confort).",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

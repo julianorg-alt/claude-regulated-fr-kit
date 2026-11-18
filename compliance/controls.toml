@@ -1,0 +1,227 @@
+# Contrôles du kit, reliés à au moins un texte (texts.toml) et à au moins un test automatisé (backlog E9.1).
+# Formats de test : pytest:<fichier>::<fonction>, unittest:<fichier>::<Classe>.<méthode>,
+# tftest:<fichier>::<run>, rego:<fichier>::<règle>, make:<cible>. `make traceability` vérifie que chaque
+# référence existe, qu'aucun contrôle n'est orphelin et que docs/compliance/matrix.md est à jour.
+
+[[control]]
+id = "C01"
+title = "Inférence limitée aux routes Bedrock qui restent dans l'UE (profil eu., refus de global. et des régions hors inventaire)"
+texts = ["RGPD-44", "AWS-BEDROCK-GEO"]
+tests = [
+  "tftest:infra/terraform/modules/bedrock-eu-access/tests/residency.tftest.hcl::paris_geo_stays_in_eu",
+  "tftest:infra/terraform/modules/bedrock-eu-access/tests/residency.tftest.hcl::us_source_refused",
+  "tftest:infra/terraform/modules/bedrock-eu-scp/tests/scp.tftest.hcl::renders_three_denies",
+  "rego:policy/terraform/bedrock_residency_test.rego::test_global_profile_denied",
+  "pytest:tools/tests/test_bedrock_inventory.py::test_allowed_routes_never_leave_the_eu",
+  "unittest:gateway/tests/test_e2e.py::Gateway.test_allowed_model_is_signed_for_paris_and_uses_eu_profile",
+  "unittest:gateway/tests/test_e2e.py::Gateway.test_models_outside_inventory_are_not_routable",
+]
+
+[[control]]
+id = "C02"
+title = "Appelant authentifié (JWT) et autorisé par groupe ; modèles permis par groupe"
+texts = ["RGPD-32"]
+tests = [
+  "unittest:gateway/tests/test_e2e.py::Gateway.test_rejects_missing_token",
+  "unittest:gateway/tests/test_e2e.py::Gateway.test_rejects_tampered_token",
+  "unittest:gateway/tests/test_e2e.py::Gateway.test_rejects_user_outside_group",
+  "unittest:gateway/tests/test_e2e_controls.py::Policy.test_model_allowed_by_group",
+  "rego:policy/gateway/gateway_test.rego::test_identity_required",
+]
+
+[[control]]
+id = "C03"
+title = "Aucune identité ni adresse IP du client transmise au fournisseur"
+texts = ["RGPD-5", "RGPD-25"]
+tests = ["unittest:gateway/tests/test_e2e.py::Gateway.test_allowed_model_is_signed_for_paris_and_uses_eu_profile"]
+
+[[control]]
+id = "C04"
+title = "Pseudonymisation des données personnelles françaises avant Bedrock, réidentification de la réponse"
+texts = ["RGPD-25", "RGPD-32"]
+tests = [
+  "unittest:gateway/tests/test_e2e_pseudo.py::Pseudonymisation.test_no_canary_anywhere_else",
+  "unittest:gateway/tests/test_e2e_pseudo.py::Pseudonymisation.test_streamed_answer_gets_the_originals_back",
+  "pytest:pseudonymisation/tests/test_benchmark.py::test_identifier_recall_and_hard_negatives",
+  "pytest:pseudonymisation/tests/test_pseudonymiser.py::test_request_rewrites_every_text_the_model_reads",
+]
+
+[[control]]
+id = "C05"
+title = "Refus d'une requête qui contient encore un identifiant en clair (NIR, IBAN, carte)"
+texts = ["RGPD-32"]
+tests = [
+  "rego:policy/gateway/gateway_test.rego::test_refuses_clear_identifiers",
+  "rego:policy/gateway/gateway_test.rego::test_absent_fields_are_refusals",
+  "unittest:gateway/tests/test_e2e_controls.py::Policy.test_identifier_reaches_bedrock_only_as_a_pseudonym",
+  "unittest:gateway/tests/test_e2e_controls.py::Policy.test_policy_engine_down_fails_closed",
+]
+
+[[control]]
+id = "C06"
+title = "Coffre de correspondances chiffré, isolé par appelant et expiré"
+texts = ["RGPD-5", "RGPD-32"]
+tests = [
+  "pytest:pseudonymisation/tests/test_pseudonymiser.py::test_vault_stores_no_clear_value",
+  "pytest:pseudonymisation/tests/test_pseudonymiser.py::test_vault_ttl",
+  "pytest:pseudonymisation/tests/test_pseudonymiser.py::test_vault_is_stable_typed_and_isolated",
+]
+
+[[control]]
+id = "C07"
+title = "Quotas journaliers et budgets mensuels par utilisateur, équipe et application"
+texts = ["DORA-9"]
+tests = [
+  "unittest:gateway/tests/test_e2e_controls.py::QuotasAndBudgets.test_user_quota_exceeded_is_refused_and_traced",
+  "unittest:gateway/tests/test_e2e_controls.py::QuotasAndBudgets.test_monthly_budget_exceeded_is_refused_and_traced",
+]
+
+[[control]]
+id = "C08"
+title = "Coupure d'urgence à trois niveaux (clé, passerelle, IAM)"
+texts = ["AI-ACT-14", "DORA-9"]
+tests = [
+  "unittest:gateway/tests/test_e2e_controls.py::KillSwitch.test_level1_revoked_application_key",
+  "unittest:gateway/tests/test_e2e_controls.py::KillSwitch.test_level2_global_stop",
+  "unittest:gateway/tests/test_e2e_controls.py::KillSwitch.test_level3_iam_deny",
+  "tftest:infra/terraform/modules/bedrock-eu-access/tests/residency.tftest.hcl::kill_switch_denies_every_bedrock_action",
+]
+
+[[control]]
+id = "C09"
+title = "Sortie réseau limitée aux points d'accès Bedrock de l'UE ; aucune interface d'administration exposée"
+texts = ["RGPD-32", "DORA-9"]
+tests = [
+  "unittest:gateway/tests/test_e2e_controls.py::Egress.test_backend_services_cannot_reach_the_internet",
+  "unittest:gateway/tests/test_e2e_controls.py::Egress.test_keycloak_admin_interfaces_are_disabled",
+  "tftest:infra/terraform/modules/gateway-egress/tests/egress.tftest.hcl::gateway_egress_is_https_to_endpoints_only",
+]
+
+[[control]]
+id = "C10"
+title = "Journal d'audit sans contenu, empreinte HMAC et chaîne de MAC, conservé sous Object Lock de 6 mois à 3 ans"
+texts = ["CNIL-2021-122", "RGPD-32", "AI-ACT-12"]
+tests = [
+  "pytest:gateway/guard/tests/test_audit.py::test_tampering_is_detected",
+  "unittest:gateway/tests/test_e2e_audit.py::AuditTrail.test_stored_segment_cannot_be_deleted",
+  "unittest:gateway/tests/test_e2e_audit.py::AuditTrail.test_request_line_holds_the_fingerprint_and_no_content",
+  "tftest:infra/terraform/modules/gateway-audit-store/tests/store.tftest.hcl::audit_is_worm_and_content_expires",
+  "tftest:infra/terraform/modules/gateway-audit-store/tests/store.tftest.hcl::audit_retention_bounds",
+]
+
+[[control]]
+id = "C11"
+title = "Appels Bedrock journalisés par CloudTrail, validation des fichiers, compartiment WORM"
+texts = ["CNIL-2021-122", "AI-ACT-12"]
+tests = [
+  "tftest:infra/terraform/modules/audit-trail/tests/audit.tftest.hcl::worm_and_validation",
+  "tftest:infra/terraform/modules/audit-trail/tests/audit.tftest.hcl::retention_bounds",
+]
+
+[[control]]
+id = "C12"
+title = "Journal de contenu optionnel : pseudonymisé seulement, quelques jours ; correspondances hors journaux"
+texts = ["RGPD-5", "RGPD-25"]
+tests = [
+  "pytest:gateway/guard/tests/test_pseudonymisation.py::test_content_log_keeps_only_what_bedrock_saw",
+  "pytest:gateway/guard/tests/test_pseudonymisation.py::test_content_log_without_pseudonymisation_is_refused",
+  "pytest:gateway/guard/tests/test_audit.py::test_content_log_keeps_short_retention",
+]
+
+[[control]]
+id = "C13"
+title = "Télémétrie OpenTelemetry GenAI sans contenu vers le SIEM"
+texts = ["RGPD-5", "RGPD-32"]
+tests = [
+  "pytest:gateway/guard/tests/test_telemetry.py::test_admitted_call_gives_one_genai_span_without_content",
+  "unittest:gateway/tests/test_e2e_audit.py::AuditTrail.test_siem_receives_a_genai_span_without_content",
+]
+
+[[control]]
+id = "C14"
+title = "Évaluation en français avant mise en service et à chaque changement de modèle"
+texts = ["RGPD-32", "AI-ACT-15"]
+tests = [
+  "make:eval",
+  "pytest:evals/tests/test_results.py::test_compare_flags_regressions",
+  "pytest:evals/tests/test_metrics.py::test_kappa_known_values",
+]
+
+[[control]]
+id = "C15"
+title = "Chaîne d'approvisionnement épinglée (actions, images, dépendances) et absence de secret dans le dépôt"
+texts = ["RGPD-32", "DORA-9"]
+tests = [
+  "pytest:tools/tests/test_supply_chain.py::test_repository_passes_its_own_gate",
+  "make:secrets",
+]
+
+[[control]]
+id = "C16"
+title = "Garde-fou Bedrock optionnel (Guardrails, anonymisation) en dernière couche"
+texts = ["RGPD-32"]
+tests = ["tftest:infra/terraform/modules/bedrock-guardrail/tests/guardrail.tftest.hcl::anonymize_by_default"]
+
+[[control]]
+id = "C17"
+title = "Aucune action irréversible d'un agent sans validation humaine liée à l'appel exact ; destinations des outils limitées à une liste autorisée"
+texts = ["AI-ACT-14", "RGPD-32", "OWASP-LLM-2025"]
+tests = [
+  "pytest:agents/tests/test_approval.py::test_irreversible_tool_needs_approval",
+  "pytest:agents/tests/test_approval.py::test_approval_is_bound_to_the_arguments",
+  "pytest:agents/tests/test_approval.py::test_agent_cannot_approve_its_own_action",
+  "pytest:agents/tests/test_destinations.py::test_other_destinations_are_refused",
+  "pytest:agents/tests/test_harness.py::test_no_irreversible_action_without_human_approval",
+]
+
+[[control]]
+id = "C18"
+title = "Red team : OWASP LLM sur la passerelle en CI, banc d'injection indirecte avec taux d'attaque réussie publié par version, garak et PyRIT planifiés"
+texts = ["AI-ACT-15", "DORA-9", "OWASP-LLM-2025"]
+tests = [
+  "make:redteam",
+  "make:redteam-selftest",
+  "make:redteam-scheduled",
+  "pytest:agents/tests/test_harness.py::test_every_attack_succeeds_without_controls",
+  "pytest:agents/tests/test_harness.py::test_published_result_for_this_version_is_current",
+]
+
+[[control]]
+id = "C19"
+title = "Proxy MCP : registre privé avec empreinte SHA-256 des descriptions d'outils, audience du jeton vérifiée (RFC 8707) sans relais de jeton, identifiants éphémères par agent, journal chaîné des appels"
+texts = ["MCP-AUTH-2026", "RGPD-32", "AI-ACT-12", "DORA-9", "OWASP-LLM-2025"]
+tests = [
+  "pytest:agents/tests/test_mcp.py::test_blocks_a_changed_tool_description",
+  "pytest:agents/tests/test_mcp.py::test_blocks_a_server_outside_the_registry",
+  "pytest:agents/tests/test_mcp.py::test_blocks_a_token_issued_for_another_resource",
+  "pytest:agents/tests/test_mcp.py::test_never_forwards_the_agent_token",
+  "pytest:agents/tests/test_mcp.py::test_downstream_credentials_are_per_agent_and_short_lived",
+  "pytest:agents/tests/test_mcp.py::test_read_call_passes_and_is_logged_with_sensitive_fields_digested",
+  "pytest:agents/tests/test_mcp.py::test_log_tampering_is_detected",
+]
+
+[[control]]
+id = "C20"
+title = "Fiche Rule of Two par workflow agentique : validation humaine de chaque action quand le workflow cumule les trois propriétés"
+texts = ["RULE-OF-TWO", "AI-ACT-14"]
+tests = [
+  "pytest:agents/tests/test_mcp.py::test_committed_sheets_are_consistent",
+  "pytest:agents/tests/test_mcp.py::test_sheet_with_three_properties_must_require_approval_on_every_action",
+  "pytest:agents/tests/test_mcp.py::test_workflow_with_three_properties_needs_approval_even_to_read",
+]
+
+[[control]]
+id = "C21"
+title = "Route de sortie vers un second fournisseur : bascule décidée, jamais de secours automatique ; fournisseurs limités à l'inventaire ; mêmes contrôles (pseudonymisation, politique, quotas, absence d'identité transmise) ; exercice de bascule rejoué"
+texts = ["DORA-28-8", "DORA-30", "RGPD-44", "RGPD-32"]
+tests = [
+  "pytest:tools/tests/test_exit_route.py::test_no_automatic_failover_to_another_provider",
+  "pytest:tools/tests/test_exit_route.py::test_cli_refuses_an_unknown_provider_and_a_host_outside_the_inventory",
+  "pytest:tools/tests/test_exit_route.py::test_switch_moves_the_same_alias_and_leaves_no_bedrock_ref",
+  "pytest:tools/tests/test_exit_route.py::test_exit_never_adds_a_model_without_a_bedrock_route",
+  "unittest:gateway/tests/test_e2e_exit.py::ExitRoute.test_personal_data_is_pseudonymised_before_the_second_provider_and_restored_for_the_client",
+  "unittest:gateway/tests/test_e2e_exit.py::ExitRoute.test_client_identity_is_not_forwarded_to_the_second_provider",
+  "unittest:gateway/tests/test_e2e_exit.py::ExitRoute.test_streamed_exit_answers_are_counted_against_quotas_and_budgets",
+  "unittest:gateway/tests/drill_exit_switch.py::SwitchDrill.test_primary_aliases_are_served_by_the_second_provider_and_nothing_reaches_bedrock",
+  "make:exit-drill",
+]

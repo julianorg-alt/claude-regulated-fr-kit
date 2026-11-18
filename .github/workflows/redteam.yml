@@ -1,0 +1,45 @@
+name: redteam
+
+# Scheduled red team (backlog E7.2): garak probes and PyRIT multi-turn scenarios against the gateway
+# of the local stack. The model behind it is the fake Bedrock, which only echoes: the run proves the
+# harness and keeps the pinned tools working; it does not measure a model. To measure one, run the
+# same commands against a gateway in front of Bedrock (agents/README.md).
+
+on:
+  schedule:
+    - cron: "41 3 * * 2" # weekly, Tuesday 03:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: redteam
+  cancel-in-progress: true
+
+jobs:
+  redteam:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Start gateway, fake Bedrock and Keycloak
+        run: make up
+      - name: Install garak and PyRIT (hash-pinned locks, CPU-only torch)
+        run: |
+          python3 -m venv .venv-garak && .venv-garak/bin/pip install --quiet --require-hashes --no-deps -r agents/scheduled/requirements-garak.txt
+          python3 -m venv .venv-pyrit && .venv-pyrit/bin/pip install --quiet --require-hashes --no-deps -r agents/scheduled/requirements-pyrit.txt
+      - name: garak and PyRIT against the gateway
+        run: make redteam-scheduled GARAK=.venv-garak/bin/python PYRIT=.venv-pyrit/bin/python
+      - name: Keep the reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: redteam-reports
+          path: agents/scheduled/out/
+          retention-days: 30
+      - name: Stop
+        if: always()
+        run: make down

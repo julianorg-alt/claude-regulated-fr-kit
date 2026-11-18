@@ -1,0 +1,8 @@
+{
+  "id": "banque-02",
+  "prompt_sha256": "853d8ffe711193e4c31f83fa820f0bc987a13d3fd9f294aec9eacb4fa75c7f21",
+  "output": "M. Client A a vu sa carte bancaire bloquée le 5 octobre 2026 après une tentative de paiement suspecte, puis a attendu trois semaines sa carte de remplacement. Il conteste les 15 euros de frais de remplacement prélevés par la Banque. Il en demande le remboursement.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

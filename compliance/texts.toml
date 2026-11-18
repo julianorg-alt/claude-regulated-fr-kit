@@ -1,0 +1,241 @@
+# Textes auxquels les contrôles du kit se rattachent (backlog E9.1).
+# `verification` renvoie au constat de docs/sources/verifications.md qui en a lu la source primaire ;
+# un texte sans constat reste « à vérifier » et la matrice l'affiche comme tel.
+
+[[text]]
+id = "RGPD-5"
+title = "Principes relatifs au traitement des données à caractère personnel"
+reference = "Règlement (UE) 2016/679, article 5"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2"
+verification = "V41"
+
+[[text]]
+id = "RGPD-25"
+title = "Protection des données dès la conception et par défaut"
+reference = "Règlement (UE) 2016/679, article 25"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4"
+verification = "V41"
+
+[[text]]
+id = "RGPD-32"
+title = "Sécurité du traitement (dont pseudonymisation, chiffrement, tests réguliers des mesures)"
+reference = "Règlement (UE) 2016/679, article 32"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4"
+verification = "V41"
+
+[[text]]
+id = "RGPD-44"
+title = "Principe général applicable aux transferts"
+reference = "Règlement (UE) 2016/679, article 44"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre5"
+verification = "V41"
+
+[[text]]
+id = "CNIL-2021-122"
+title = "Recommandation relative aux mesures de journalisation"
+reference = "CNIL, délibération n° 2021-122 du 14 octobre 2021"
+url = "https://www.cnil.fr/fr/la-cnil-publie-une-recommandation-relative-aux-mesures-de-journalisation"
+verification = "V32"
+
+[[text]]
+id = "AWS-BEDROCK-GEO"
+title = "Profils d'inférence géographiques de Bedrock : destinations et contrôle par IAM"
+reference = "Documentation AWS Bedrock, inference profiles"
+url = "https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html"
+verification = "V1"
+
+[[text]]
+id = "AI-ACT-12"
+title = "Enregistrement (journaux) des systèmes d'IA à haut risque"
+reference = "Règlement (UE) 2024/1689, article 12"
+url = "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+verification = "V42"
+
+[[text]]
+id = "AI-ACT-14"
+title = "Contrôle humain des systèmes d'IA à haut risque"
+reference = "Règlement (UE) 2024/1689, article 14"
+url = "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+verification = "V42"
+
+[[text]]
+id = "AI-ACT-15"
+title = "Exactitude, robustesse et cybersécurité"
+reference = "Règlement (UE) 2024/1689, article 15"
+url = "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+verification = "V42"
+
+[[text]]
+id = "DORA-9"
+title = "Protection et prévention (gestion du risque lié aux TIC)"
+reference = "Règlement (UE) 2022/2554, article 9"
+url = "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+verification = "V44"
+
+[[text]]
+id = "RGPD-30"
+title = "Registre des activités de traitement"
+reference = "Règlement (UE) 2016/679, article 30"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4"
+verification = "V41"
+
+[[text]]
+id = "RGPD-35"
+title = "Analyse d'impact relative à la protection des données"
+reference = "Règlement (UE) 2016/679, article 35"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4"
+verification = "V41"
+
+[[text]]
+id = "RGPD-46"
+title = "Transferts moyennant des garanties appropriées"
+reference = "Règlement (UE) 2016/679, article 46"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre5"
+verification = "V41"
+
+[[text]]
+id = "CEPD-REC-01-2020"
+title = "Mesures qui complètent les instruments de transfert"
+reference = "CEPD, recommandations 01/2020, version 2.0"
+url = "https://www.edpb.europa.eu/documents/recommendation/recommendations-012020-on-measures-that-supplement-transfer-tools-to_fr"
+verification = "V43"
+
+[[text]]
+id = "AI-ACT-27"
+title = "Analyse d'impact des systèmes d'IA à haut risque sur les droits fondamentaux"
+reference = "Règlement (UE) 2024/1689, article 27"
+url = "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+verification = "V42"
+
+[[text]]
+id = "DORA-28"
+title = "Risque lié aux prestataires tiers de services TIC, registre d'information"
+reference = "Règlement (UE) 2022/2554, article 28"
+url = "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+verification = "V44"
+
+[[text]]
+id = "DORA-28-8"
+title = "Stratégies et plans de sortie pour les services TIC qui soutiennent des fonctions critiques ou importantes"
+reference = "Règlement (UE) 2022/2554, article 28, paragraphes 7 et 8, et article 30, paragraphe 3, point f"
+url = "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+verification = "V67"
+
+[[text]]
+id = "DORA-30"
+title = "Principales dispositions contractuelles"
+reference = "Règlement (UE) 2022/2554, article 30"
+url = "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+verification = "V44"
+
+[[text]]
+id = "DORA-ITS-2024-2956"
+title = "Modèles types du registre d’informations"
+reference = "Règlement d’exécution (UE) 2024/2956"
+url = "https://eur-lex.europa.eu/eli/reg_impl/2024/2956/oj"
+verification = "V46"
+
+[[text]]
+id = "OWASP-LLM-2025"
+title = "OWASP Top 10 for LLM Applications 2025 (référentiel de sécurité, non réglementaire)"
+reference = "OWASP GenAI Security Project, LLM01 à LLM10"
+url = "https://genai.owasp.org/llm-top-10/"
+verification = "V47"
+
+[[text]]
+id = "MCP-AUTH-2026"
+title = "Model Context Protocol, autorisation et bonnes pratiques de sécurité (spécification 2026-07-28, référentiel technique)"
+reference = "MCP 2026-07-28, Authorization ; RFC 8707 ; RFC 9728"
+url = "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization"
+verification = "V50"
+
+[[text]]
+id = "RULE-OF-TWO"
+title = "Agents Rule of Two (Meta, 31/10/2025, référentiel de sécurité, non réglementaire)"
+reference = "Propriétés [A], [B], [C] ; supervision au-delà de deux"
+url = "https://ai.meta.com/blog/practical-ai-agent-security/"
+verification = "V51"
+
+[[text]]
+id = "AI-ACT-3-25"
+title = "Règlement IA : définitions du fournisseur et du déployeur, responsabilités le long de la chaîne de valeur"
+reference = "Règlement (UE) 2024/1689, article 3, points 3 et 4, et article 25"
+url = "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+verification = "V57"
+
+[[text]]
+id = "AI-ACT-26"
+title = "Règlement IA : obligations des déployeurs de systèmes à haut risque (journaux d’au moins six mois, information des personnes et des travailleurs)"
+reference = "Règlement (UE) 2024/1689, article 26"
+url = "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+verification = "V57"
+
+[[text]]
+id = "AI-ACT-50"
+title = "Règlement IA : obligations de transparence (information des personnes, marquage, textes d’intérêt public)"
+reference = "Règlement (UE) 2024/1689, article 50"
+url = "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+verification = "V57"
+
+[[text]]
+id = "AI-ACT-OMNIBUS-2026"
+title = "Omnibus numérique sur l’IA : dates d’application du haut risque, article 27, paragraphe 4, et article 4 réécrits"
+reference = "Règlement (UE) 2026/1744 du 8 juillet 2026"
+url = "https://eur-lex.europa.eu/eli/reg/2026/1744/oj"
+verification = "V56"
+
+[[text]]
+id = "RGPD-4-28"
+title = "Responsable du traitement et sous-traitant"
+reference = "Règlement (UE) 2016/679, article 4, points 7 et 8, et article 28"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4"
+verification = "V62"
+
+[[text]]
+id = "RGPD-9"
+title = "Catégories particulières de données, dont les données concernant la santé"
+reference = "Règlement (UE) 2016/679, article 9"
+url = "https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2"
+verification = "V62"
+
+[[text]]
+id = "EIOPA-AI-2025"
+title = "Avis de l’EIOPA sur la gouvernance et la gestion des risques de l’IA (lignes de lecture pour les autorités nationales, non contraignant)"
+reference = "EIOPA-BoS-25-360 du 6 août 2025"
+url = "https://www.eiopa.europa.eu/publications/opinion-artificial-intelligence-governance-and-risk-management_en"
+verification = "V59"
+
+[[text]]
+id = "ACPR-RIA"
+title = "ACPR, autorité de surveillance du marché des systèmes d’IA à haut risque du secteur financier"
+reference = "Page « Règlement européen sur l’IA » de l’ACPR"
+url = "https://acpr.banque-france.fr/fr/reglementation/focus-sur-la-reglementation/transverse/reglement-europeen-sur-lia-ai-act"
+verification = "V58"
+
+[[text]]
+id = "HDS-CSP-L1111-8"
+title = "Hébergement des données de santé à caractère personnel et certification HDS"
+reference = "Code de la santé publique, article L. 1111-8 ; référentiel de certification HDS de l’ANS"
+url = "https://esante.gouv.fr/produits-services/hds"
+verification = "V61"
+
+[[text]]
+id = "HAS-AVEC-2025"
+title = "HAS, premières clefs d’usage de l’IA générative en santé (lignes directrices A.V.E.C., recommandation non contraignante)"
+reference = "HAS, octobre 2025"
+url = "https://www.has-sante.fr/jcms/p_3703115/fr/premieres-cles-d-usage-de-l-ia-generative-en-sante"
+verification = "V60"
+
+[[text]]
+id = "SECNUMCLOUD"
+title = "Qualification SecNumCloud de l’ANSSI (prestataires d’informatique en nuage)"
+reference = "Référentiel d’exigences SecNumCloud, FAQ de l’ANSSI"
+url = "https://cyber.gouv.fr/enjeux-technologiques/cloud/faq-qualification-secnumcloud/"
+verification = "V63"
+
+[[text]]
+id = "SREN-31"
+title = "Loi SREN : recours au nuage par l'État et ses opérateurs, protection des données d'une sensibilité particulière contre l'accès d'autorités d'États tiers"
+reference = "Loi n° 2024-449 du 21 mai 2024, article 31"
+url = "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049563368"
+verification = "V64"

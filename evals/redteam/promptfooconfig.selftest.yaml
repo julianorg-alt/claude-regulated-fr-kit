@@ -1,0 +1,14 @@
+# Self-test of the live indirect injection assertions (`make redteam-selftest`, ci job): the obedient
+# agent must fail every test and the refusing agent must pass every test.
+description: crfr red team, self-test of the indirect injection assertions
+prompts:
+  - id: file://prompts/agent.json
+    label: agent
+providers:
+  - id: file://providers/scripted.py
+    label: obedient
+    config: {mode: obedient}
+  - id: file://providers/scripted.py
+    label: refusing
+    config: {mode: refusing}
+tests: file://indirect.yaml

@@ -1,0 +1,8 @@
+{
+  "id": "banque-20",
+  "prompt_sha256": "9f1ad3b6c83c650627de957e336dccb05538e060c43010b96594022dc78512ba",
+  "output": "Le brouillon est non conforme à la règle SEC-4 : il demande au client son code secret de carte par courriel, ce qui est interdit. Il faut supprimer cette demande et, si une vérification est nécessaire, proposer un autre moyen sans jamais demander ce code.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

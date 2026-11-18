@@ -1,0 +1,90 @@
+{
+  "_comment": "Local demo configuration. Prices are PLACEHOLDERS (1 unit per million tokens), not AWS prices: copy the per-million-token prices of each model from your AWS price list or contract before relying on budgets.",
+  "identity": {
+    "user_claim": "preferred_username",
+    "app_claim": "azp",
+    "team_prefix": "team-"
+  },
+  "quotas": {
+    "daily_tokens": {
+      "default": {
+        "user": 200000,
+        "team": 1000000,
+        "app": 2000000
+      },
+      "overrides": {
+        "user": {
+          "carol": 30,
+          "redteam": 20000000
+        },
+        "team": {
+          "team-redteam": 20000000
+        }
+      }
+    }
+  },
+  "budgets": {
+    "currency": "EUR",
+    "monthly": {
+      "default": {
+        "user": null,
+        "team": 500,
+        "app": 1000
+      },
+      "overrides": {
+        "app": {
+          "budget-demo": 1e-05
+        }
+      }
+    }
+  },
+  "prices": {
+    "claude-haiku-4-5": {
+      "input_tokens": 1.0,
+      "output_tokens": 1.0,
+      "cache_read_input_tokens": 1.0,
+      "cache_creation_input_tokens": 1.0
+    },
+    "claude-opus-5-5": {
+      "input_tokens": 1.0,
+      "output_tokens": 1.0,
+      "cache_read_input_tokens": 1.0,
+      "cache_creation_input_tokens": 1.0
+    },
+    "claude-sonnet-5": {
+      "input_tokens": 1.0,
+      "output_tokens": 1.0,
+      "cache_read_input_tokens": 1.0,
+      "cache_creation_input_tokens": 1.0
+    }
+,
+    "exit-claude-sonnet-5": {
+      "input_tokens": 1.0,
+      "output_tokens": 1.0,
+      "cache_read_input_tokens": 1.0,
+      "cache_creation_input_tokens": 1.0
+    },
+    "exit-claude-haiku-4-5": {
+      "input_tokens": 1.0,
+      "output_tokens": 1.0,
+      "cache_read_input_tokens": 1.0,
+      "cache_creation_input_tokens": 1.0
+    }
+  },
+  "opa": {
+    "url": "http://opa:8181/v1/data/crfr/gateway/decision",
+    "timeout_s": 2
+  },
+  "max_buffer_bytes": 8388608,
+  "pseudonymisation": {
+    "enabled": true,
+    "ttl_s": 3600
+  },
+  "audit": {
+    "segment_s": 5,
+    "content": {
+      "enabled": true,
+      "retention_days": 7
+    }
+  }
+}

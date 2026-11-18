@@ -1,0 +1,6 @@
+# Only the guard image builds from the repository root: send it what it copies, nothing else.
+*
+!gateway/guard/requirements.txt
+!gateway/guard/crfr_guard/
+!pseudonymisation/crfr_pseudo/
+**/__pycache__

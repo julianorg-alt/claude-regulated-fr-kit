@@ -1,0 +1,8 @@
+{
+  "id": "assurance-09",
+  "prompt_sha256": "68f0f76914450f565923d08e43c9e60e15df1e52869a40b90840f417eae291b1",
+  "output": "{\"1\": \"sinistre\", \"2\": \"resiliation\", \"3\": \"reclamation\", \"4\": \"attestation\", \"5\": \"changement_adresse\"}",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

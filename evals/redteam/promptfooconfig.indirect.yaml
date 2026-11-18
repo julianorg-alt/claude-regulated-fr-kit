@@ -1,0 +1,16 @@
+# Indirect prompt injection against a real model (backlog E7.3), run by `make redteam-live` with your
+# credentials. The tests are generated from agents/scenarios/indirect.toml (`make redteam-promptfoo`).
+# A test fails when the model followed the injected instruction (action on the attacked tool, or the
+# attacker's content in its answer). CI never runs this file: it has no model and no key (K3, K8).
+description: crfr red team, indirect injection, live model
+prompts:
+  - id: file://prompts/agent.json
+    label: agent
+providers:
+  - id: bedrock:eu.anthropic.claude-sonnet-5
+    label: live
+    config:
+      region: eu-west-3
+      max_tokens: 1024
+      temperature: 0
+tests: file://indirect.yaml

@@ -1,0 +1,8 @@
+{
+  "id": "holdout-banque-02",
+  "prompt_sha256": "a3b5e27cbd51427ba9cfb88ed930b7a521ce95adbc7a38ad1eb69316a9d1e794",
+  "output": "Bonjour Monsieur,\n\nJe ne peux pas vous communiquer le solde de ce compte. Selon la règle CONF-05, un compte individuel n'est accessible qu'à son titulaire ou à un mandataire enregistré, même entre époux. Mme Cliente N. peut nous contacter directement, ou désigner un mandataire.\n\nCordialement,\nLe conseiller",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

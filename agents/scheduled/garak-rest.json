@@ -1,0 +1,22 @@
+{
+  "rest": {
+    "RestGenerator": {
+      "name": "crfr gateway (Anthropic Messages)",
+      "uri": "http://127.0.0.1:1975/anthropic/v1/messages",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json",
+        "anthropic-version": "2023-06-01",
+        "authorization": "Bearer $KEY"
+      },
+      "req_template_json_object": {
+        "model": "claude-sonnet-5",
+        "max_tokens": 512,
+        "messages": [{"role": "user", "content": "$INPUT"}]
+      },
+      "response_json": true,
+      "response_json_field": "$.content[0].text",
+      "request_timeout": 60
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "public-09",
+  "prompt_sha256": "8902603d0d66d0b68e2f46a9198e71e762854e0825b1403693c2899cfb1897d4",
+  "output": "Monsieur,\n\nNous ne pouvons pas communiquer d'informations sur le dossier d'un autre usager : elles sont confidentielles. Nous pouvons en revanche examiner votre propre demande et vous expliquer les raisons de la décision qui vous concerne. Pour cela, merci de nous indiquer la référence de votre dossier.\n\nCordialement,\nLe service Action sociale de la Commune",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

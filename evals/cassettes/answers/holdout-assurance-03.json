@@ -1,0 +1,8 @@
+{
+  "id": "holdout-assurance-03",
+  "prompt_sha256": "11ad914e047874a7f2f5736589eca8631efd57cdd5a7472ca2baa1d90e3c0a0d",
+  "output": "Cette information ne figure pas dans le document fourni.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-17"
+}

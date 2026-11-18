@@ -1,0 +1,23 @@
+# Evaluation in French over four sectors (backlog E6). CI replays recorded answers and verdicts
+# (providers/cassette.py, providers/judge.py); `make eval-live` calls a real model instead.
+description: crfr evaluation, French, four sectors
+prompts:
+  - id: file://prompts/assistant.json
+    label: assistant
+providers:
+  - id: file://providers/cassette.py
+    label: cassette
+defaultTest:
+  options:
+    provider: file://providers/judge.py
+    # The judge sees the task and its source document, so INCONNU only means a real doubt.
+    rubricPrompt: file://prompts/judge.json
+tests:
+  - file://tasks/banque.yaml
+  - file://tasks/assurance.yaml
+  - file://tasks/sante.yaml
+  - file://tasks/public.yaml
+  - file://tasks/holdout/banque.yaml
+  - file://tasks/holdout/assurance.yaml
+  - file://tasks/holdout/sante.yaml
+  - file://tasks/holdout/public.yaml

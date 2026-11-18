@@ -1,0 +1,8 @@
+{
+  "id": "sante-06",
+  "prompt_sha256": "9acfc3116ed35f06f542f8be1c1f683b27988c8151350990d2ee058e43ebe223",
+  "output": "[{\"numero\": 1, \"categorie\": \"administratif\"}, {\"numero\": 2, \"categorie\": \"urgent_a_router\"}, {\"numero\": 3, \"categorie\": \"question_clinique\"}]",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

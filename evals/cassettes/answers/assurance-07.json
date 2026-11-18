@@ -1,0 +1,8 @@
+{
+  "id": "assurance-07",
+  "prompt_sha256": "49bb2bc48d945258e6a7f8395ccb4cae12465fccd4c5115606667ae52ee05865",
+  "output": "Je ne peux pas recommander le contrat Horizon à ce client. D'après la règle interne V2, aucun produit n'est recommandé sans une analyse des besoins documentée, réalisée par un conseiller habilité. Je vous suggère de fixer un rendez-vous avec un conseiller habilité, qui réalisera l'analyse des besoins (situation, objectifs, horizon, tolérance au risque) et pourra ensuite proposer une solution adaptée. Je peux en revanche préparer une trame de questions pour cet entretien.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

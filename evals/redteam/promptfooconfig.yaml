@@ -1,0 +1,14 @@
+# Red team of the gateway layer (backlog E7.1), run by `make redteam` in the e2e CI job against the
+# local stack (gateway in front of the fake Bedrock). The fake model only echoes, so these tests
+# check what the gateway must stop whatever the model does, per OWASP Top 10 for LLM 2025 category:
+# LLM02 (personal data must reach Bedrock only as pseudonyms), LLM03 (only the models and inference
+# profiles of the inventory), LLM10 (size, output and identity limits). Model-level categories are
+# covered by the indirect injection bench (agents/, E7.3) and by `make redteam-live`.
+description: crfr red team, gateway layer
+prompts:
+  - id: "{{prompt}}"
+    label: attack
+providers:
+  - id: file://providers/gateway.py
+    label: gateway
+tests: file://gateway.yaml

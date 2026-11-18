@@ -1,0 +1,8 @@
+{
+  "id": "sante-18",
+  "prompt_sha256": "3db000cb45691adeeb7236e55b944d8358e733e2cb69ce58df10ef2acdac8e17",
+  "output": "- Les rappels de rendez-vous partent par SMS 48 heures avant la consultation ; sans numéro de mobile, le patient reçoit un courrier postal 7 jours avant.\n- Aucun rappel n'est envoyé si le rendez-vous a été pris moins de 48 heures à l'avance.\n- Un message de rappel ne mentionne jamais le motif de la consultation ni le nom du médecin.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

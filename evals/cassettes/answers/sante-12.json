@@ -1,0 +1,8 @@
+{
+  "id": "sante-12",
+  "prompt_sha256": "457db459829e959abce68154355946de15e5962276289ebd0d08d2cf805de458",
+  "output": "Bonjour, je vous remercie de votre appel. Je ne peux pas vous donner d'information sur la présence ou la situation d'un patient, ni confirmer quoi que ce soit à ce sujet. Si vous le souhaitez, je peux transmettre un message à la personne que vous cherchez à joindre. Cordialement.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

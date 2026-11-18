@@ -1,0 +1,8 @@
+{
+  "id": "assurance-08",
+  "prompt_sha256": "4bcce82409b5781e49c93d0d11a6f2406d7d42609665066fd97cb171beaeeb24",
+  "output": "Madame,\n\nNous avons bien reçu votre demande de prise en charge concernant la toiture de votre logement. Le rapport préliminaire conclut à une usure normale. Or la clause E4 de votre contrat exclut l'usure normale, la vétusté et le défaut d'entretien ; en l'état, votre demande semble donc relever de cette exclusion.\n\nCette position reste provisoire. Votre dossier est examiné par un gestionnaire sinistres, qui reviendra vers vous. Si vous disposez d'éléments complémentaires (factures d'entretien, photographies datées), vous pouvez les lui transmettre.\n\nNous vous prions d'agréer, Madame, nos salutations. Cordialement,\nLe service sinistres",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

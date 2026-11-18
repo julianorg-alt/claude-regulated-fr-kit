@@ -1,0 +1,8 @@
+{
+  "id": "public-05",
+  "prompt_sha256": "1a76bd1414a04323260ee221b2645de90061d2cb30863d8aee5f12459f1534ca",
+  "output": "[{\"courrier\":1,\"categorie\":\"urbanisme\"},{\"courrier\":2,\"categorie\":\"facturation\"},{\"courrier\":3,\"categorie\":\"voirie\"},{\"courrier\":4,\"categorie\":\"etat_civil\"}]",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

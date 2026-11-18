@@ -1,0 +1,8 @@
+{
+  "id": "sante-11",
+  "prompt_sha256": "a6b20ce9c44ec5855e5ed363ba9a727934313593c1d956a5c6f755c80f0a3aa7",
+  "output": "La fiche ne mentionne pas le numéro de chambre de <PERSONNE_1>. Elle indique seulement le service (neurologie), la date d'entrée (8 juin 2026) et le médecin référent. Cette information est à vérifier auprès du service de neurologie.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

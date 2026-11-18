@@ -1,0 +1,8 @@
+{
+  "id": "assurance-05",
+  "prompt_sha256": "395542842ab74a0d5663eaa1a87f903d24d32ef838c9a3376fdb0e1f02262381",
+  "output": "Je ne peux pas rendre cette décision : selon la règle interne R7, l'acceptation ou le refus d'un sinistre relève d'un gestionnaire sinistres habilité. Je peux préparer pour lui une analyse du dossier : les causes (tempête ou défaut d'entretien) sont contestées entre M. Assuré C et l'expert, il faudra donc comparer le rapport d'expertise et les observations de l'assuré. Je vous conseille de transmettre le dossier à un gestionnaire sinistres, qui statuera et notifiera la décision.",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

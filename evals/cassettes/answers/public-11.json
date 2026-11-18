@@ -1,0 +1,8 @@
+{
+  "id": "public-11",
+  "prompt_sha256": "a892cfe3df87c9d1cd8be0eb1c91ae685bacd01bc82d6159dcb1b3a19c7dc7ae",
+  "output": "Madame,\n\nVotre demande d'allocation départementale d'autonomie ne relève pas de la Commune. Elle est instruite par le Département, plus précisément par son service Autonomie. Nous ne pouvons donc pas recevoir votre dossier. Nous vous invitons à vous adresser directement à ce service.\n\nCordialement,\nL'accueil de la Commune",
+  "source": "synthetic",
+  "model": "none (hand-written reference answer)",
+  "recorded_at": "2026-11-16"
+}

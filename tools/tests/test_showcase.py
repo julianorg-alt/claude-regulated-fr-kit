@@ -52,3 +52,15 @@ def test_architecture_page_matches_listeners_and_components():
     for part in ("Envoy", "guard", "OPA", "Bedrock", "RustFS", "Keycloak", "MCP"):
         assert part in page, part
     assert "docs/architecture.md" in README
+
+
+def test_limits_state_the_measured_quality_gap_of_the_exit_provider():
+    block = README.split("## Limits", 1)[1]
+    page = (ROOT / "docs/evals/exit-provider-2026-11-18.md").read_text(encoding="utf-8")
+    main = re.search(r"\| Main set, decided pass rate \| ([0-9.]+) \| ([0-9.]+) ", page).groups()
+    critical = re.search(r"\| Main set, critical tasks \| ([0-9.]+) \| ([0-9.]+) ", page).groups()
+    assert "exit-provider-2026-11-18.md" in block
+    for value in (*main, *critical):
+        shown = f"{float(value):.4f}".rstrip("0")
+        shown += "0" * max(0, 2 - len(shown.split(".")[1]))  # at least two decimals: 0.75, 1.00, 0.9356
+        assert shown in block, shown

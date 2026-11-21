@@ -110,6 +110,7 @@ cd tools && uv run python -m crfr.bedrock_inventory check-aws --inventory ../inf
 
 - No Claude offering is processed in Paris only: Paris is a source and a destination of the `eu.` profile, never an in-Region option.
 - The kit does not claim HDS (French health data hosting) certification or SecNumCloud qualification. Sensitive State data covered by article 31 of the SREN law stays out of scope (see the public sector sheet). The high-risk rules of the AI Act for annex III uses apply from 2 December 2027 since regulation (EU) 2026/1744.
+- The exit route keeps the service running at a lower quality. Mistral Large 4 on the same tasks, prompt and judge scored 0.9356 on decided main-set tasks and 0.75 on critical tasks, against 0.9957 and 1.00 for Claude in run 5 (see [exit-provider-2026-11-18.md](docs/evals/exit-provider-2026-11-18.md)). The acceptance threshold is the deployer's decision.
 - The Anthropic API offers only `global` or `us` as inference geography (checked on 2026-11-16), so the kit does not use it for EU residency. Microsoft Foundry is not covered: its EU options for Claude are still to be verified.
 
 ## Licence

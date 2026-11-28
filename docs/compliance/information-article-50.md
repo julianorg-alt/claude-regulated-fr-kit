@@ -1,5 +1,7 @@
 # Information des personnes au titre de l’article 50 du règlement IA
 
+> **English summary.** Proposed notice for an organisation that gives staff or customers an assistant built on Claude behind the kit's gateway, under article 50 of the EU AI Act. Bracketed parts are to be replaced; the text must be reviewed by a lawyer or the data protection officer before use.
+
 Backlog E9.5. Texte proposé à l’organisation qui met à disposition de son personnel ou de ses clients un assistant fondé sur Claude, derrière la passerelle du kit. Les crochets sont à remplacer. Le texte est à relire par le juriste ou le délégué à la protection des données avant diffusion.
 
 ## 1. Ce que demande l’article 50

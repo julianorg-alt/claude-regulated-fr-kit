@@ -1,5 +1,7 @@
 # Modèle d’analyse d’impact des transferts
 
+> **English summary.** Template for a transfer impact analysis (GDPR articles 44 and 46) following the six steps of EDPB recommendations 01/2020. Filled passages describe the data flows the kit creates; brackets are for the exporter to complete.
+
 Analyse d’un transfert de données personnelles hors de l’EEE (RGPD, articles 44 et 46), en suivant les six étapes des recommandations 01/2020 du CEPD, version 2.0 du 18 juin 2021 (constat V43). Les passages remplis décrivent les flux que crée le kit ; les crochets sont à compléter par l’exportateur.
 
 | Champ | Valeur |

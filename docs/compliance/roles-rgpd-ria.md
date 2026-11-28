@@ -1,5 +1,7 @@
 # Matrice des rôles : RGPD et règlement IA
 
+> **English summary.** Role matrix: for each actor in a typical deployment of the kit, the probable role under the GDPR (controller, processor) and under the EU AI Act (provider, deployer). A starting point for the record of processing, the DPIA and the contract; the real role depends on the facts and is decided case by case.
+
 Backlog E9.5. La matrice indique, pour chaque acteur d’un déploiement type du kit, son rôle probable au sens du RGPD et du règlement IA. Elle sert de point de départ au registre des traitements, à l’AIPD et au contrat ; le rôle réel dépend des faits et se décide au cas par cas.
 
 ## 1. Définitions retenues

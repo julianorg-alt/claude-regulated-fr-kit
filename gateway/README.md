@@ -8,7 +8,7 @@ make e2e   # end-to-end tests (gateway/tests/test_e2e*.py)
 make down
 ```
 
-Behind a TLS-inspecting proxy, build the two local images first with the proxy's CA bundle passed as the `build_ca` build secret (`docker buildx build --secret id=build_ca,src=ca.crt -t crfr-guard gateway/guard`, same for `fake-bedrock`), then run `make up UP_FLAGS=`.
+Behind a TLS-inspecting proxy, build the two local images first with the proxy's CA bundle passed as the `build_ca` build secret (from the repository root: `docker buildx build --secret id=build_ca,src=ca.crt -f gateway/guard/Dockerfile -t gateway-guard -t gateway-audit-shipper .` and `docker buildx build --secret id=build_ca,src=ca.crt -t gateway-fake-bedrock gateway/fake-bedrock`; the guard image needs the repository root as build context), then run `make up UP_FLAGS=`. The image names are the ones Compose expects for the default project directory name `gateway`; check with `docker compose -f gateway/compose.yaml config --images` if you renamed it.
 
 ## Request path
 

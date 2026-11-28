@@ -1,5 +1,7 @@
 # Modèle de FRIA : analyse d’impact sur les droits fondamentaux
 
+> **English summary.** Template for a fundamental rights impact assessment under article 27 of the EU AI Act. The obligation falls on the deployer; classifying a use as high-risk is for the deployer to establish, and this template does not presume it. Check the consolidated version of the article before use.
+
 Règlement IA (UE) 2024/1689, article 27, dans sa version publiée au Journal officiel (constat V42). Une version modifiée de l’article circule sur des sites secondaires ; tant que l’acte modificatif n’est pas identifié, vérifier la version consolidée avant usage. Utiliser aussi le modèle de questionnaire que le Bureau de l’IA doit publier (paragraphe 5).
 
 ## Qui doit la faire

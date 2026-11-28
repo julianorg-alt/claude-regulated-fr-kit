@@ -1,5 +1,7 @@
 # Modèle d’entrées du registre d’informations DORA
 
+> **English summary.** Entries to prepare for the DORA register of information (article 28(3)) for the two contractual arrangements a deployment of the kit creates. It does not replace the official templates of Implementing Regulation (EU) 2024/2956; it lists the values to carry over.
+
 Règlement (UE) 2022/2554 (DORA), article 28, paragraphe 3 : l’entité financière tient un registre d’informations sur tous les accords contractuels portant sur des services TIC fournis par des prestataires tiers, en distinguant ceux qui soutiennent des fonctions critiques ou importantes (constat V44). Les modèles types sont fixés par le règlement d’exécution (UE) 2024/2956 (constat V46).
 
 Ce fichier ne remplace pas ces modèles. Il prépare, pour les deux accords que crée un déploiement du kit, les valeurs à reporter dans les modèles officiels, avec le modèle de destination entre parenthèses. Les codes de colonnes et les listes fermées sont ceux de l’annexe I du règlement d’exécution ; les prestataires personnes morales s’identifient par leur LEI ou leur EUID (article 3, paragraphe 5).

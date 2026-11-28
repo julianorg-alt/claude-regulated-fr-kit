@@ -1,5 +1,7 @@
 # Matrice de traçabilité
 
+> **English summary.** Traceability matrix, generated from `compliance/controls.toml` and `compliance/texts.toml`: every control of the kit is linked to at least one legal text and at least one automated test, and CI fails otherwise. A text marked "à vérifier" has not been read on its primary source yet; its link is proposed, not established.
+
 Générée par `make traceability` depuis `compliance/controls.toml` et `compliance/texts.toml` ; ne pas modifier à la main. Chaque contrôle est relié à au moins un texte et à au moins un test automatisé ; la CI échoue sinon (backlog E9.1).
 
 Un texte « à vérifier » n'a pas encore été lu sur sa source primaire depuis la session de développement : le rattachement est proposé, pas établi.

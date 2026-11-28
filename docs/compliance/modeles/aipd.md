@@ -1,5 +1,7 @@
 # Modèle d’AIPD : assistant IA derrière la passerelle du kit
 
+> **English summary.** Template for a data protection impact assessment (GDPR article 35) of an AI assistant behind the kit's gateway. Filled passages describe what the kit sets up and point to controls in the traceability matrix; brackets are for the controller to complete. It does not say whether a DPIA is mandatory for your processing.
+
 Analyse d’impact relative à la protection des données (RGPD, article 35). Le paragraphe 7 de l’article fixe un contenu minimal en quatre points, repris par les sections 1 à 4 (texte lu sur le site de la CNIL, constat V41). Les passages déjà remplis décrivent ce que le kit met en place et renvoient aux contrôles de la [matrice de traçabilité](../matrix.md) ; les crochets sont à compléter par le responsable du traitement.
 
 Ce modèle ne dit pas si une AIPD est obligatoire pour votre traitement : c’est au responsable du traitement d’en juger, au regard de l’article 35, paragraphes 1 et 3, et de la liste publiée par la CNIL.

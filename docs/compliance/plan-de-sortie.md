@@ -1,5 +1,7 @@
 # Plan de sortie du fournisseur de modèles
 
+> **English summary.** Exit plan for the model provider, answering DORA article 28(7)-(8) and article 30(3)(f). It describes what the kit does technically to switch provider; values in brackets, the functions concerned, delays and the contract remain decisions of the financial entity. It does not replace the contract or the register of information.
+
 Backlog E10.2. Ce plan répond à l’article 28, paragraphes 7 et 8, du règlement (UE) 2022/2554 (DORA) et à l’article 30, paragraphe 3, point f, lu dans le texte du Journal officiel (constat V67). Il vaut pour un service d’inférence qui soutient une fonction critique ou importante ; pour les autres, il sert de base proportionnée. Les valeurs entre crochets sont à fixer par l’entité financière : le kit ne connaît ni ses fonctions, ni ses délais, ni son contrat.
 
 Le plan décrit ce que le kit permet de faire techniquement et ce qui reste une décision de l’entité. Il ne remplace ni le contrat, ni le registre d’informations (`docs/compliance/modeles/registre-dora.md`).

@@ -1,5 +1,7 @@
 # Fiche sectorielle : santé
 
+> **English summary.** Sector sheet for health, social and medico-social bodies considering Claude through Amazon Bedrock behind the kit's gateway. It states what the kit covers, what it does not and what has not been verified, including health-data hosting (HDS certification) and the French health authority's guidance on generative AI.
+
 Backlog E9.4. Cette fiche s’adresse à un établissement ou un service sanitaire, social ou médico-social qui envisage Claude par Amazon Bedrock derrière la passerelle du kit. Elle dit ce que le kit couvre, ce qu’il ne couvre pas et ce qui n’a pas été vérifié.
 
 ## 1. Textes et autorités

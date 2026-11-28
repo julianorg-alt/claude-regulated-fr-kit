@@ -1,5 +1,7 @@
 # Grille d’écarts : DPA d’Anthropic et article 30 de DORA
 
+> **English summary.** Gap grid comparing Anthropic's Data Processing Addendum (in force 24 February 2025) with the minimum contractual provisions of DORA article 30. It applies to direct Anthropic API use only; for Amazon Bedrock, the default path of the kit, the AWS contract applies and has not been read here. "Absent from the DPA" does not mean "absent from the contract".
+
 Backlog E9.3. La grille compare le Data Processing Addendum d’Anthropic, en vigueur le 24 février 2025 (constat V45), aux dispositions contractuelles minimales de l’article 30 du règlement (UE) 2022/2554, lu dans sa version publiée au Journal officiel (constat V44).
 
 ## Quel contrat est concerné

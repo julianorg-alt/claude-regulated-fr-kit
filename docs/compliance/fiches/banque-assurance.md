@@ -1,5 +1,7 @@
 # Fiche sectorielle : banque et assurance
 
+> **English summary.** Sector sheet for credit institutions, insurers and intermediaries supervised by the ACPR that deploy Claude through Amazon Bedrock behind the kit's gateway. It states what the kit covers, what stays with the institution and what has not been verified. It does not replace the advice of the compliance officer or the data protection officer.
+
 Backlog E9.4. Cette fiche s’adresse à un établissement de crédit, une entreprise d’assurance ou un intermédiaire soumis au contrôle de l’ACPR, qui déploie Claude par Amazon Bedrock derrière la passerelle du kit. Elle dit ce que le kit couvre, ce qui reste à la charge de l’établissement et ce qui n’a pas été vérifié. Elle ne remplace ni l’avis du responsable de la conformité ni celui du délégué à la protection des données.
 
 ## 1. Textes et autorités

@@ -1,5 +1,7 @@
 # Fiche sectorielle : secteur public
 
+> **English summary.** Sector sheet for State administrations, their operators and public interest groups considering Claude through Amazon Bedrock behind the kit's gateway. It states what the kit covers, what is out of scope and what has not been verified (SREN law article 31, SecNumCloud). It does not replace the advice of the information security officer or the data protection officer.
+
 Backlog E9.4. Cette fiche s’adresse à une administration de l’État, à l’un de ses opérateurs ou à un groupement d’intérêt public qui envisage Claude par Amazon Bedrock derrière la passerelle du kit. Elle dit ce que le kit couvre, ce qu’il laisse hors de son périmètre et ce qui n’a pas été vérifié. Elle ne remplace ni l’avis du responsable de la sécurité des systèmes d’information ni celui du délégué à la protection des données.
 
 ## 1. Textes et autorités
